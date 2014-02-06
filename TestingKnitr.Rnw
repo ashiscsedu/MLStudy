@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage{graphicx,color,framed,alltt}
+
+\begin{document}
+My awesome \LaTeX test.
+
+<<label="Test", results='markup'>>=
+variable1 <- 1
+variable2 = 2
+hello_txt <- "Hello world" #just to illustrate the markup
+@
+
+
+I've now created two variables, one with the value \Sexpr{variable1} and one with the value \Sexpr{variable2}. I've used two different assignment operators, the $<-$ and the $=$. The $<-$ is preferred because it gives a natural understanding of assignment since the $<-$ looks like an arrow while $=$ can be confused with equal (that usually is represented by two equal signs "$==$").
+
+We can reference the variable a little further down:
+
+<<label="Add the variables",echo=FALSE,results='markup'>>==
+variable1 + variable2
+print(hello_txt)
+@
+
+
+That's all folks!!
+
+\end{document}
