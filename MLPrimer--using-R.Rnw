@@ -1336,6 +1336,93 @@ So, we can compute the directional derivative by
 \nonumber &=& (12\hat{i}+9\hat{j})\cdot (\frac{4}{5}\hat{i} + \frac{3}{5}\hat{j})\\
 \nonumber &=& \frac{48}{5} + \frac{27}{5} = \frac{75}{5} = 15 = ||\nabla f(3,2)|| = ||12\hat{i}+9\hat{j}|| =  \sqrt{12^2+9^2} = 15
 \end{eqnarray}
+
+\section{Gradient as a derivative}
+A Gradient is the derivative of a scalar with respect to a vector. For vector $\vec x = (x_1, x_2, \cdots, x_n)^T$.
+\begin{eqnarray}
+\nonumber \dfrac{\partial f(\vec x)}{\partial \vec x} = \begin{pmatrix} \left[ \dfrac{\partial f(\vec x)}{\partial x_1}\right]\\
+\left[ \dfrac{\partial f(\vec x)}{\partial x_2}\right]\\
+\vdots\\
+\left[ \dfrac{\partial f(\vec x)}{\partial x_n}\right] \end{pmatrix}
+\end{eqnarray}
+For Example, if we have a function: $f(\vec x) = x_1x^2_3 + x_1x^2_2 + x_2x^2_3 + x^2_1 + x^2_2 + x^2_3 + 2x_1x_2 + 2x_1x_3 + 2x_2x_3$, with $\vec x = (x_1, x_2, x_3)^T$.  Then the Gradient is:
+\begin{eqnarray}
+\nonumber \dfrac{\partial f(\vec x)}{\partial \vec x} &=& \begin{pmatrix}\left[ \dfrac{\partial f(\vec x)}{\partial x_1}\right]\\
+\left[ \dfrac{\partial f(\vec x)}{\partial x_2}\right]\\
+\left[ \dfrac{\partial f(\vec x)}{\partial x_3}\right]\end{pmatrix}\\
+\nonumber &=& \begin{pmatrix}
+x^2_3+x^2_2+2x_1+2x_2+2x_3\\
+2x_1x_2+x^2_3+2x_2+2x_1+2x_3\\
+2x_1x_3+2x_2x_3+2x_3+2x_1+2x_2
+\end{pmatrix}
+\end{eqnarray}
+
+\section{Jacobian as a derivative}
+A Jacobian is a derivative of a vector with respect to a transposed vector. For a vector $\vec x = (x_1, x_2, \cdots, x_n)^T$, and a $k$ dimensional function $\vec f = (f_1, f_2, \cdots, f_k)^T$, we have
+\begin{eqnarray}
+\nonumber \dfrac{\partial \overrightarrow{f(\vec{x})}}{\partial \vec x^T} = \begin{pmatrix}
+\left[ \dfrac{\partial f_1(\vec x)}{\partial x_1}\right] & \left[ \dfrac{\partial f_1(\vec x)}{\partial x_2}\right] & \cdots & \left[ \dfrac{\partial f_1(\vec x)}{\partial x_n}\right]\\
+\vdots & \vdots & \ddots & \vdots \\
+\left[ \dfrac{\partial f_k(\vec x)}{\partial x_1}\right] & \left[ \dfrac{\partial f_k(\vec x)}{\partial x_2}\right] & \cdots & \left[ \dfrac{\partial f_k(\vec x)}{\partial x_n}\right]
+\end{pmatrix}
+\end{eqnarray}
+For instance, if we have a function 
+\[ 
+\overrightarrow{f(\vec x)} = \begin{pmatrix}
+3x^2_1 + x_2\\
+ln(x_1) + x_3\\
+sin(x_2) + cos(x_4)
+\end{pmatrix}, \qquad \vec x= \begin{pmatrix}
+x_1\\x_2\\x_3\\x_4
+\end{pmatrix}
+\]
+Then the Jacobian is
+\begin{eqnarray}
+\nonumber \dfrac{\partial \overrightarrow{f(\vec{x})}}{\partial \vec x^T} = \begin{pmatrix}
+\left[ \dfrac{\partial f_1(\vec x)}{\partial x_1}\right] & \left[ \dfrac{\partial f_1(\vec x)}{\partial x_2}\right] & \left[ \dfrac{\partial f_1(\vec x)}{\partial x_3}\right] & \left[ \dfrac{\partial f_1(\vec x)}{\partial x_4}\right]\\
+\left[ \dfrac{\partial f_2(\vec x)}{\partial x_1}\right] & \left[ \dfrac{\partial f_2(\vec x)}{\partial x_2}\right] & \left[ \dfrac{\partial f_2(\vec x)}{\partial x_3}\right] & \left[ \dfrac{\partial f_2(\vec x)}{\partial x_4}\right]\\
+\left[ \dfrac{\partial f_3(\vec x)}{\partial x_1}\right] & \left[ \dfrac{\partial f_3(\vec x)}{\partial x_2}\right] & \left[ \dfrac{\partial f_3(\vec x)}{\partial x_3}\right] & \left[ \dfrac{\partial f_3(\vec x)}{\partial x_4}\right] 
+\end{pmatrix} = \begin{pmatrix}
+6x_1 & 1 & 0 & 0\\
+\frac{1}{x_1} & 0 & 1 & 0\\
+0 & cos(x_2) & 0 & -sin(x_4)
+\end{pmatrix}
+\end{eqnarray}
+
+\section{Hessian as a derivative}
+The Hessian is the derivative of a Gradient with respect to a transposed vector. For a given vector $\vec x =(x_1, x_2, \cdots, x_n)^T$, we have the gradient
+\begin{eqnarray}
+\nonumber \dfrac{\partial f(\vec x)}{\partial \vec x} = \begin{pmatrix} \left[ \dfrac{\partial f(\vec x)}{\partial x_1}\right]\\
+\left[ \dfrac{\partial f(\vec x)}{\partial x_2}\right]\\
+\vdots\\
+\left[ \dfrac{\partial f(\vec x)}{\partial x_n}\right] \end{pmatrix}
+\end{eqnarray}
+Then the Hessian would the derivative of this gradient with respect to $\vec x^T$.
+\begin{eqnarray}
+\nonumber \dfrac{\partial^2 f(\vec x)}{\partial \vec x\partial \vec x^T} = \begin{pmatrix} \left[ \dfrac{\partial f(\vec x)}{\partial x^2_1}\right] & \left[ \dfrac{\partial f(\vec x)}{\partial x_1 \partial x_2}\right] & \cdots & \left[ \dfrac{\partial f(\vec x)}{\partial x_1\partial x_n}\right]\\
+\vdots & \vdots & \ddots & \vdots\\
+\left[ \dfrac{\partial f(\vec x)}{\partial x_n\partial x_1}\right] & \left[ \dfrac{\partial f(\vec x)}{\partial x_n \partial x_2}\right] & \cdots & \left[ \dfrac{\partial f(\vec x)}{\partial x^2_n}\right]
+ \end{pmatrix}
+\end{eqnarray}
+For instance, for function $f(\vec x) = x_1x^2_3 + x_1x^2_2 + x_2x^2_3 + x^2_1 + x^2_2 + x^2_3 + 2x_1x_2 + 2x_1x_3 + 2x_2x_3$, with $\vec x = (x_1, x_2, x_3)^T$, the Gradient we computed previously wass
+\begin{eqnarray}
+\nonumber \dfrac{\partial f(\vec x)}{\partial \vec x} &=& \begin{pmatrix}
+x^2_3+x^2_2+2x_1+2x_2+2x_3\\
+2x_1x_2+x^2_3+2x_2+2x_1+2x_3\\
+2x_1x_3+2x_2x_3+2x_3+2x_1+2x_2
+\end{pmatrix}
+\end{eqnarray}
+Hence, the Hessian would be
+\begin{eqnarray}
+\nonumber \dfrac{\partial^2 f(\vec x)}{\partial \vec x\partial \vec x^T} = \begin{pmatrix} \left[ \dfrac{\partial f(\vec x)}{\partial x^2_1}\right] & \left[ \dfrac{\partial f(\vec x)}{\partial x_1 \partial x_2}\right] & \left[ \dfrac{\partial f(\vec x)}{\partial x_1 \partial x_3}\right]\\
+\left[ \dfrac{\partial f(\vec x)}{\partial x_2\partial x_1}\right] & \left[ \dfrac{\partial f(\vec x)}{\partial x^2_2}\right] & \left[ \dfrac{\partial f(\vec x)}{\partial x_2 \partial x_3}\right]\\
+\left[ \dfrac{\partial f(\vec x)}{\partial x_3\partial x_1}\right] & \left[ \dfrac{\partial f(\vec x)}{\partial x_3 \partial x_2}\right] & \left[ \dfrac{\partial f(\vec x)}{\partial x^2_3}\right]
+ \end{pmatrix} = \begin{pmatrix}2 & 2x_2+2 & 2x_3+2\\
+ 2x_2+2 & 2x_1+2 & 2x_3+2\\
+ 2x_3+2 & 2x_3+2 & 2x_1+2x_2+2
+ \end{pmatrix}
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\bibliographystyle{IEEEtran}
 	\bibliography{Report}
 
