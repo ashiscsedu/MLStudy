@@ -1,0 +1,19 @@
+Note: rshlmnfnnbi.m is the main function for LBF and LBF-MS.
+Examples: 
+B=rand(60,2);
+B(1:30,1)=0;
+B(31:60,2)=0;
+LBF
+[centers mincent ene]=rshlmnfnnbi(B,2,1,0,1);
+LBFMS:
+[centers mincent ene]=rshlmnfnnbi(B,2,1,0,1);
+
+lbfsc.m is the main function for SLBF and SLBF-MS. Examples:
+B=rand(60,2);
+B(1:30,1)=4;
+B(31:60,2)=0;
+B=B+rand(size(B))*0.1;
+SLBE:
+label=lbfsc(B,2,1,1);
+SLBF-MS:
+label=lbfsc(B,2,1,2);

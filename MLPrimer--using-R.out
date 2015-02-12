@@ -1,0 +1,38 @@
+\BOOKMARK [1][-]{section.1}{Vector Space}{}% 1
+\BOOKMARK [1][-]{section.2}{Vector Subspace}{}% 2
+\BOOKMARK [1][-]{section.3}{Linear Span}{}% 3
+\BOOKMARK [1][-]{section.4}{Linearly Independent Vectors}{}% 4
+\BOOKMARK [1][-]{section.5}{Basis}{}% 5
+\BOOKMARK [1][-]{section.6}{Rank of a Matrix}{}% 6
+\BOOKMARK [1][-]{section.7}{Singular Matrix}{}% 7
+\BOOKMARK [1][-]{section.8}{Idempotent Matrix}{}% 8
+\BOOKMARK [1][-]{section.9}{Diagonal Matrix}{}% 9
+\BOOKMARK [1][-]{section.10}{Identity Matrix}{}% 10
+\BOOKMARK [1][-]{section.11}{Triangular Matrix}{}% 11
+\BOOKMARK [1][-]{section.12}{Row Echelon Form}{}% 12
+\BOOKMARK [1][-]{section.13}{Gauss-Jordan Elimination Algorithm}{}% 13
+\BOOKMARK [2][-]{subsection.13.1}{Solving system of linear equations}{section.13}% 14
+\BOOKMARK [2][-]{subsection.13.2}{Computing Determinant of matrix}{section.13}% 15
+\BOOKMARK [2][-]{subsection.13.3}{Computing rank of matrix}{section.13}% 16
+\BOOKMARK [2][-]{subsection.13.4}{Computing inverse of matrix}{section.13}% 17
+\BOOKMARK [1][-]{section.14}{Inverse Matrix}{}% 18
+\BOOKMARK [1][-]{section.15}{System of Linear Equations}{}% 19
+\BOOKMARK [1][-]{section.16}{Dot Product of two vectors}{}% 20
+\BOOKMARK [1][-]{section.17}{Unit vector}{}% 21
+\BOOKMARK [1][-]{section.18}{Matrix Product}{}% 22
+\BOOKMARK [1][-]{section.19}{Transpose of a Matrix}{}% 23
+\BOOKMARK [1][-]{section.20}{Eigenvalues and Eigenvectors}{}% 24
+\BOOKMARK [1][-]{section.21}{Norm of vectors}{}% 25
+\BOOKMARK [2][-]{subsection.21.1}{Euclidean norm of a vector}{section.21}% 26
+\BOOKMARK [2][-]{subsection.21.2}{Manhattan norm of a vector}{section.21}% 27
+\BOOKMARK [2][-]{subsection.21.3}{p-Norm of a vector}{section.21}% 28
+\BOOKMARK [2][-]{subsection.21.4}{Maximum Norm of a vector}{section.21}% 29
+\BOOKMARK [1][-]{section.22}{Norm of Matrices}{}% 30
+\BOOKMARK [2][-]{subsection.22.1}{L1-norm of a matrix}{section.22}% 31
+\BOOKMARK [2][-]{subsection.22.2}{Inifinity-norm of a matrix}{section.22}% 32
+\BOOKMARK [2][-]{subsection.22.3}{Euclidean-norm of a matrix}{section.22}% 33
+\BOOKMARK [2][-]{subsection.22.4}{L2,1-norm of a matrix}{section.22}% 34
+\BOOKMARK [1][-]{section.23}{Derivative}{}% 35
+\BOOKMARK [1][-]{section.24}{Partial Derivative}{}% 36
+\BOOKMARK [1][-]{section.25}{Directional Derivative}{}% 37
+\BOOKMARK [1][-]{section*.1}{References}{}% 38

@@ -1,0 +1,46 @@
+function [mincent ]=lbfsc(X,nc,cc,opt) 
+%input: X - data set with dimension N times D
+% nc-number of clusters
+%cc- dimension of clusters
+% opt- if 1, then this is SLBF, if 2 then this is SLBF-MS
+%out put: mincent{end} is the recommended label
+% mincent-- a structure of size 2+length(delta), each of the structure is a vector representing the results of the clustering: The first length(delta) labels corresponds to the classification arrording to the different delta values, mincent{end-1} is the label by maxmizing the eigenmap in the spectral matrix, and mincent{end} correcpond to the  delta chosen by the ell_2 error.
+planedimensions=ones(1,nc)*cc;
+d=max(planedimensions);
+K=length(planedimensions);
+[N,D]=size(X);
+step=2;% find the best neighborhood by increasing its size by 2 each time
+scales=40;%check 40 different neighborhoods at most
+ss=0;% affine subspace by default
+nB=sum(X.^2,2);
+rid=repmat(randpermute(floor(N)),1,1);
+dis=zeros(N,N);
+subspace=cell(1,N);
+neighbor=cell(1,N);
+neighbors=zeros(1,N);
+delta=2*exp(0:1:6);% delta-- we multiple this parameter to the size of noise as the `delta' used in spectral clustering, could be a vector(default value: 2*exp(0:1:6))
+for i=1:N 
+	% fit a good subspace for each point
+	if opt==1
+	[uid q q1 q2 noise(i)]=gnhbd2(X,i,d,2*d,step,scales,ss,1,nB);
+	elseif opt==2
+	[uid q q1 q2 noise(i)]=gnhbd(X,i,d,2*d,step,scales,ss,1,nB);
+	end
+	subspace{i}=q;
+	neighbor{i}=uid;
+	neighbors(i)=length(uid);
+	X_centered=X-repmat(subspace{i}(1,:),size(X,1),1);% reduce the center of the subspace from the data set
+	dis(:,i)=(sum((X_centered-X_centered*subspace{i}(2:end,:)'*subspace{i}(2:end,:)).^2,2)).^0.5;%distance from the points to the subspaces
+
+end	
+	[mincent tt]=dissc(dis,K,delta,noise);% find the label from the distance matrix
+
+	delta_difference=-tt(end,:);
+	[temp1,temp2]=min(delta_difference);
+	mincent{length(mincent)+1}=mincent{temp2};% choose the label maximizing the eigenmap in the spectral matrix
+mse=zeros(1,length(mincent));
+for i=1:length(mincent)
+	mse(i)=computing_average_L2_error(X, ones(1,K)*d, mincent{i});% find the fitted l2 error of each label
+end
+[temp1,temp2]=min(mse);
+mincent{length(mincent)+1}=mincent{temp2};% choose the best label in terms of the fitted l2 error
