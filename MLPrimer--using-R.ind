@@ -1,0 +1,99 @@
+\begin{theindex}
+
+  \item $L_1$-norm, \hyperpage{16}
+  \item $L_{2,1}$ norm, \hyperpage{17}
+  \item \emph{p}-norm, \hyperpage{16}
+
+  \indexspace
+
+  \item Basis, \hyperpage{2}
+
+  \indexspace
+
+  \item Derivative, \hyperpage{18}
+  \item Determinant, \hyperpage{7}
+  \item Diagonal Matrix, \hyperpage{3}
+  \item Directional Derivative, \hyperpage{24}
+  \item Dot product, \hyperpage{12}
+
+  \indexspace
+
+  \item Echelon Form, \hyperpage{6}
+  \item Eigenvalues and Eigenvectors, \hyperpage{13}
+  \item Euclidean norm, \hyperpage{16, 17}
+
+  \indexspace
+
+  \item Frobenius norm, \hyperpage{17}
+
+  \indexspace
+
+  \item Gauss-Jordan Elimination Algorithm, \hyperpage{6}
+  \item Gradient, \hyperpage{27}
+
+  \indexspace
+
+  \item Hadamard Product, \hyperpage{29, 30}
+  \item Hessian, \hyperpage{28}
+
+  \indexspace
+
+  \item Idempotent Matrix, \hyperpage{3}
+  \item Identity Matrix, \hyperpage{3}
+  \item Infinity norm, \hyperpage{17}
+  \item Inverse of Matrix, \hyperpage{9, 10}
+
+  \indexspace
+
+  \item Jacobian, \hyperpage{28}
+
+  \indexspace
+
+  \item Kronecker Product, \hyperpage{29}
+
+  \indexspace
+
+  \item Linear Span, \hyperpage{1}
+  \item Linearly Independent Vectors, \hyperpage{1}
+
+  \indexspace
+
+  \item Manhattan norm, \hyperpage{16}
+  \item Matrix norms, \hyperpage{16}
+  \item Matrix Product, \hyperpage{13}
+  \item Maximum norm, \hyperpage{16}
+
+  \indexspace
+
+  \item Norm of vectors, \hyperpage{16}
+  \item Norms, \hyperpage{16}
+
+  \indexspace
+
+  \item Rank of matrix, \hyperpage{2}, \hyperpage{8}
+  \item Row Echelon Form, \hyperpage{6}
+
+  \indexspace
+
+  \item Schur product, \hyperpage{29}
+  \item Singular Matrix, \hyperpage{2}
+  \item Solving system of linear equations, \hyperpage{7}, 
+		\hyperpage{11}
+  \item System of Linear Equations, \hyperpage{11}
+
+  \indexspace
+
+  \item Trace of Matrix, \hyperpage{30}
+  \item Transpose of Matrix, \hyperpage{13}
+  \item Triangular Matrix, \hyperpage{5}
+
+  \indexspace
+
+  \item Unit vector, \hyperpage{13}
+
+  \indexspace
+
+  \item Vector Space, \hyperpage{1}
+  \item Vector Subspace, \hyperpage{1}
+
+\end{theindex}

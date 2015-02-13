@@ -15,7 +15,7 @@
 \BOOKMARK [2][-]{subsection.13.2}{Computing Determinant of matrix}{section.13}% 15
 \BOOKMARK [2][-]{subsection.13.3}{Computing rank of matrix}{section.13}% 16
 \BOOKMARK [2][-]{subsection.13.4}{Computing inverse of matrix}{section.13}% 17
-\BOOKMARK [1][-]{section.14}{Inverse Matrix}{}% 18
+\BOOKMARK [1][-]{section.14}{Inverse of Matrix}{}% 18
 \BOOKMARK [1][-]{section.15}{System of Linear Equations}{}% 19
 \BOOKMARK [1][-]{section.16}{Dot Product of two vectors}{}% 20
 \BOOKMARK [1][-]{section.17}{Unit vector}{}% 21
@@ -38,4 +38,7 @@
 \BOOKMARK [1][-]{section.26}{Gradient as a derivative}{}% 38
 \BOOKMARK [1][-]{section.27}{Jacobian as a derivative}{}% 39
 \BOOKMARK [1][-]{section.28}{Hessian as a derivative}{}% 40
-\BOOKMARK [1][-]{section*.1}{References}{}% 41
+\BOOKMARK [1][-]{section.29}{Hadamard Product}{}% 41
+\BOOKMARK [1][-]{section.30}{Kronecker Product}{}% 42
+\BOOKMARK [1][-]{section.31}{Trace of a Matrix}{}% 43
+\BOOKMARK [1][-]{section*.1}{References}{}% 44

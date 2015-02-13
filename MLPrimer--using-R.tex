@@ -58,6 +58,16 @@
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \include{header}
+
+\newenvironment{theindex}{%
+  \let\item\par   % definitions for subitem etc
+  \begin{multicols}{2}
+}{\end{multicols}}
+\newcommand\indexspace{}
+\makeindex
+
+
+
 \renewcommand{\thesection}{\arabic{section}}
 \renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
 \renewcommand{\thesubsubsection}{\thesubsection.\thesection.\arabic{subsubsection}}
@@ -79,9 +89,8 @@
 	\date{\today}
 	\maketitle
 
-
 	\section{Vector Space}
-	\label{term:vector_space}
+	\label{term:vector_space}\index{Vector Space}
 Vector space, $V$ over a field $\mathbb{F}$ (e.g., $\mathbb{R}$) is a collection of vectors ($\vec v\in V$) allowing the two operations: vector addition and scalar multiplication satisfying the following properties:
 \begin{itemize}
 \item Commutativity: $\vec a + \vec b = \vec b + \vec a, \forall \vec a, \vec b\in V$
@@ -102,7 +111,7 @@ Vector space possesses other properties too:
 \end{itemize}
 
 	\section{Vector Subspace}
-	\label{term_vector_subspace}
+	\label{term_vector_subspace}\index{Vector Subspace}
 Let $V$ be a \hyperref[term:vector_space]{vector space}	over $\mathbb{F}$, and let $U\subset V$ be a subset of $V$. Then $U$ is a said to be a subspace of $V$ if $U$ is a vector space over $\mathbb{F}$ under the same operations that make $V$ into a \hyperref[term:vector_space]{vector space} over $\mathbb{F}$. However, it will be enough to check whether the following three conditions hold.
 \begin{itemize}
 \item Additive identity: $\vec 0 \in U$
@@ -111,7 +120,7 @@ Let $V$ be a \hyperref[term:vector_space]{vector space}	over $\mathbb{F}$, and l
 \end{itemize}
 	
 	\section{Linear Span}
-	\label{term:linear_span}
+	\label{term:linear_span}\index{Linear Span}
 Let $V$ denote a \hyperref[term:vector_space]{vector space} over $\mathbb{F}$. Given vectors $\vec a_1, \vec a_2, \cdots, \vec a_m \in V$, and a vector $\vec a\in V$ is a linear combination of $(\vec a_1, \vec a_2, \cdots, \vec a_m)$ if there exist scalars $k_1, k_2, \cdots, k_m\in \mathbb{F}$ such that $\vec a = k_1\vec a_1 + k_2\vec a_2+ \cdots + k_m\vec a_m$. 
 
 Thus, a linear span of a set of vectors $(\vec a_1, \vec a_2, \cdots, \vec a_m)$ is defined as:
@@ -129,7 +138,7 @@ If $V$ is a vector space, and $\vec a_1, \vec a_2, \cdots, \vec a_m\in V$, then
 	
 
 	\section{Linearly Independent Vectors}
-	\label{term:linearly_independent_vectors}
+	\label{term:linearly_independent_vectors}\index{Linearly Independent Vectors}
 Two rows, or two columns (a.k.a. vectors) of a matrix are called linearly dependent to each other if one is a multiple of the other. Three rows, or three columns of a matrix together are linearly dependent if one is linear combination of the other two. And so on... If you can not find this dependence among a set of rows or columns (a.k.a. vectors), then they are called linearly independent vectors.
 
 \[
@@ -168,7 +177,7 @@ The following are the list of sets containing linearly independent vectors from 
 \end{itemize}
 
 	\section{Basis}
-	\label{term:basis}
+	\label{term:basis}\index{Basis}
 A basis of a \hyperref[term:vector_space]{vector space} $V$ over a field $\mathbb{F}$ is a \hyperref[term:linearly_independent_vectors]{linearly independent} subset of $V$ that spans $V$. All bases for finite-dimensional vector spaces have the same length. This length will then be called the dimension of the \hyperref[term:vector_space]{vector space}.
 
 A list of vectors $(\vec a_1, \vec a_2, \cdots, \vec a_m)$ is a basis for the finite-dimensional vector space $V$ if $(\vec a_1, \vec a_2, \cdots, \vec a_m)$ is linearly independent and $V = \text{span}(\vec a_1, \vec a_2, \cdots, \vec a_m)$
@@ -199,7 +208,7 @@ Concisely, $B$ denotes a subset of a vector space $V$. Then $B$ is a basis iff a
 Figure \ref{fig:basis} illustrates a geometric interpretation of the basis concept.
 	
 	\section{Rank of a Matrix}
-	\label{term:rank_of_a_matrix}
+	\label{term:rank_of_a_matrix}\index{Rank of matrix}
 The number of \hyperref[term:linearly_independent_vectors]{linearly independent} rows and/or columns is the rank of the matrix. If all of the rows, as well as all of the columns are \hyperref[term:rank_of_a_matrix]{linearly independent}, then the matrix is called full rank.
 
 A set (i.e., family) of vectors is linearly dependent if a member vector is in the linear span of the rest of the family, i.e., a member vector can be represented by a linear combination of the rest of the family. 
@@ -207,7 +216,7 @@ A set (i.e., family) of vectors is linearly dependent if a member vector is in t
 A set of vectors which is linearly independent and spans some vector space, forms a \hyperref[term:basis]{basis} for that vector space. For example, the vector space of all polynomials in $x$ over the reals has the infinite subset $\{1, x, x^2, x^3, \cdots\}$ as a basis.
 
 	\section{Singular Matrix}
-	\label{term:singular_matrix}
+	\label{term:singular_matrix}\index{Singular Matrix}
 The square matrix which is not \hyperref[term:rank_of_a_matrix]{full rank}, is called a singular matrix. That is, one or more rows and/or columns of the matrix are \hyperref[term:linearly_independent_vectors]{linearly dependent}. A singular matrix is not invertible. Only the non-singular matrices are invertible.
 
 Singular matrices are also called the degenerate matrices.
@@ -225,11 +234,11 @@ Other properties of invertible (i.e., non-singular, or non-degenerate) matrices:
 \item $\text{det}(A^{-1}) = (\text{det}(A))^{-1}$
 \end{itemize}
 	\section{Idempotent Matrix}
-	\label{term:idempotent_matrix}
+	\label{term:idempotent_matrix}\index{Idempotent Matrix}
 	It is a matrix when multiplied to itself produces itself\cite{chiang2005fundamental}. The matrix $A$ is idempotent if $AA=A$. And obviously the matrix $A$ should be a square matrix. Except the \hyperref[term:identity_matrix]{identity matrix}, all the idempotent matrices are \hyperref[term:singular_matrix]{singular}. 
 	
 	\section{Diagonal Matrix}
-	\label{term:diagonal_matrix}
+	\label{term:diagonal_matrix}\index{Diagonal Matrix}
 It is a square matrix in which the entries outside the main diagonal (i.e, top-left to bottom-right) are all zero. The diagonal entries themselves may or may not be zero.
 
 Properties of the diagonal matrices are:
@@ -238,7 +247,7 @@ Properties of the diagonal matrices are:
 \end{itemize}
 	
 	\section{Identity Matrix}
-	\label{term:identity_matrix}
+	\label{term:identity_matrix}\index{Identity Matrix}
 It is like 1 in scalar sense. You multiply anything to 1, you get exactly what you multiplied with it. So, for any given square matrix $A\in\mathbb{R}^{n\times n}$, multiplying it with the identity matrix of same dimension would produce the same matrix $A$.
 \begin{equation}
 IA = AI = A
@@ -379,7 +388,7 @@ The identity matrix is the only \hyperref[term:idempotent_matrix]{idempotent mat
 \end{knitrout}
 
 \section{Triangular Matrix}
-\label{term:triangular_matrix}
+\label{term:triangular_matrix}\index{Triangular Matrix}
 A square matrix is called lower triangular matrix if all the entries above the main diagonal (i.e., from top-left to bottom-right) are zero\cite{wiki:TriangularMatrix}. For instance,
 \[
 L = \begin{pmatrix}
@@ -413,7 +422,7 @@ Determinant of a triangular matrix ($L$ or $U$) is the product of all the elemen
 \end{eqnarray}
 
 \section{Row Echelon Form}
-\label{term:row_echelon_form}
+\label{term:row_echelon_form}\index{Row Echelon Form}\index{Echelon Form}
 If you apply \hyperref[term:gauss_jordan_elimination_algorithm]{Gaussian elimination} on a matrix, the resulting  matrix will be in row echelon form. A matrix is in row echelon form if
 \begin{itemize}
   \item All nonzero rows (i.e.,rows with at least one nonzero element) are above any rows of all zeros (all zero rows, if any, belong at the bottom of the matrix)
@@ -458,7 +467,7 @@ Let's work with the $3\times 6$ matrix above:
     	\end{pmatrix}
 \end{eqnarray}
 \section{Gauss-Jordan Elimination Algorithm}
-\label{term:gauss_jordan_elimination_algorithm}
+\label{term:gauss_jordan_elimination_algorithm}\index{Gauss-Jordan Elimination Algorithm}
 This method is a sequence of operations performed on the coefficient matrix corresponding to a system of linear equations to solve it\cite{wiki:GaussianElimination}. However, the method is also useful --
 \begin{itemize}
   \item To find rank of a matrix
@@ -476,7 +485,7 @@ To perform row reduction on a matrix, one uses a sequence of elementary row oper
 Using these operations, a matrix can always be transformed into an \hyperref[term:triangular_matrix]{upper triangular matrix}, and in fact one that is in \hyperref[term:row_echelon_form]{row echelon form}. The steps required upto this is called Gaussian Elimination. However, the steps of row reduction until the matrix becomes the \hyperref[term:row_echelon_form]{reduced row echelon form} is called Gauss-Jordan Elimination, to distinguish it from stopping after reaching the echelon form.
 
 \subsection{Solving system of linear equations}
-\label{term:gauss_jordan_elimination_algorithm_solve_systems}
+\label{term:gauss_jordan_elimination_algorithm_solve_systems}\index{Solving system of linear equations}
 Given the following system of linear equations:
 \begin{eqnarray}
 2x + y - z &=& 8\qquad (L_1)\\
@@ -548,7 +557,7 @@ z
 \end{eqnarray}
 
 \subsection{Computing Determinant of matrix}
-\label{term:gauss_jordan_elimination_algorithm_compute_determinant}
+\label{term:gauss_jordan_elimination_algorithm_compute_determinant}\index{Determinant}
 Let's look at how the elementary row operations on a square matrix $A\in \mathbb{R}^{n\times n}$ affect the determinant of that matrix:
 \begin{itemize}
 	\item \textbf{Row switching}: Everytime you switch any two rows $R_i$ and $R_j$ of matrix $A$, you will have the same determinant with opposite sign, i.e., $\text{det}(A)\xrightarrow{\substack{R_i \rightarrow R_j\\ R_j \rightarrow R_i}} (-1)\times \text{det}(A)$.
@@ -610,7 +619,7 @@ Since, the echelon form is an upper triangular matrix, then the determinant is g
 
 
 \subsection{Computing rank of matrix}
-\label{term:gauss_jordan_elimination_algorithm_compute_rank}
+\label{term:gauss_jordan_elimination_algorithm_compute_rank}\index{Rank of matrix}
 The Gaussian elimination algorithm can be applied to any $m\times n$ matrix $A$. In this way, for example, some $6\times 9$ matrices can be transformed to a matrix that has a row echelon form like:
 \[ 
 T = \begin{pmatrix}
@@ -687,7 +696,7 @@ We see that there are only two pivots in the echelon matrix, so the $\text{rank}
 \end{itemize}
 
 \subsection{Computing inverse of matrix}
-\label{term:term:gauss_jordan_elimination_algorithm_compute_inverse}
+\label{term:term:gauss_jordan_elimination_algorithm_compute_inverse}\index{Inverse of Matrix}
 The variant of the Gaussian elimination, called the Gauss-Jordan elimination algorithm can be used to find the inverse of a matrix, $A\in \mathbb{R}^{n\times n}$, if the matrix is invertible. 
 
 First, the $n\times n$ identity matrix $I$ is augmented to the right of $A$, forming a block matrix $[A | I] \in \mathbb{R}^{n\times 2n}$.
@@ -762,8 +771,8 @@ A^{-1} = \left[ \begin{array}{ccc}
  \end{array}\right]
 \]
 
-\section{Inverse Matrix}
-\label{term:inverse_matrix}
+\section{Inverse of Matrix}
+\label{term:inverse_matrix}\index{Inverse of Matrix}
 Suppose, we have two matrices $A\in\mathbb{R}^{n\times n}, B\in\mathbb{R}^{n\times n}$, then if $AB=BA=I_n$ holds, that is, their multiplication yields \hyperref[term:identity_matrix]{identity matrix}, then we say $A$ is the inverse of $B$, or vice versa.
 
 For instance, $ A = \begin{pmatrix}
@@ -802,7 +811,7 @@ Here are some other properties of invertible matrix $A$:
 
 A matrix that is its own inverse, i.e., $A = A^{-1}$ and $A^2 = I$, is called an involution.
 	\section{System of Linear Equations}
-	\label{term:linear_systems}
+	\label{term:linear_systems}\index{System of Linear Equations}\index{Solving system of linear equations}
 A set of linear equations can be formulated using Matrices. For instance, consider the two equations of two variables $x$ and $y$.
 \begin{eqnarray}
 3x+2y = 7\\
@@ -929,7 +938,7 @@ y
 \end{knitrout}
  
 	\section{Dot Product of two vectors}
-	\label{term:dot_product}
+	\label{term:dot_product}\index{Dot product}
 It is an operation that takes two equal-length vecors and returns a scalar. It is also known as scalar product, or sometimes inner product in the context of the Euclidean space.
 
 The dot product of two vectors $\vec a=\begin{pmatrix}a_1\\a_2\\\vdots\\a_n\end{pmatrix}, \vec b=\begin{pmatrix}b_1\\b_2\\\vdots\\b_n\end{pmatrix}$ is defined as:
@@ -951,13 +960,13 @@ This implies:
 This the fomula to compute the Euclidean length of a vector.
 
 	\section{Unit vector}
-	\label{term:unit_vector}
+	\label{term:unit_vector}\index{Unit vector}
 A vector having length (i.e., the \hyperref[term:dot_product]{Euclidean length}) equal to 1.
 The normalized vector of a non-zero vector $\hat{\mathbf{v}}$ is the unit vector co-directional with $\mathbf{v}$, i.e.,
 \[ \hat{\mathbf{v}} = \dfrac{\mathbf{v}}{||\mathbf{v}||} \]
 
 	\section{Matrix Product}
-	\label{term:matrix_product}
+	\label{term:matrix_product}\index{Matrix Product}
 If $A\in \mathbb{R}^{m\times n}$, and $B\in \mathbb{R}^{n\times k}$, their product $AB\in \mathbb{R}^{m\times k}$
 
 Properties of matrix product:
@@ -969,7 +978,7 @@ Properties of matrix product:
 
 
 	\section{Transpose of a Matrix}
-	\label{term:transpose_of_a_matrix}
+	\label{term:transpose_of_a_matrix}\index{Transpose of Matrix}
 Let's consider a matrix $A\in \mathbb{R}^{m\times n}$,
 \[
 A = \begin{pmatrix}
@@ -1018,7 +1027,7 @@ Properties of transpose operator:
  \end{itemize}
 	
 	\section{Eigenvalues and Eigenvectors}
-	\label{term:eigenvalues_and_eigenvectors}
+	\label{term:eigenvalues_and_eigenvectors}\index{Eigenvalues and Eigenvectors}
 An eigenvector of a square matrix $A$ is a non-zero vector $\vec v$ that, when the matrix multiplies $\vec v$, yields the same result as when some scalar multiplies $\vec v$. The scalar multiplier is denoted by $\lambda$, which is called the eigenvalue of $A$ corresponding to the eigenvector $\vec v$. That is:
 \[ A\vec v = \lambda\vec v\]
 
@@ -1139,11 +1148,11 @@ Other properties of the eigenvalues and eigenvectors of matrix $A$ with eigenval
 \end{itemize}
 
 \section{Norm of vectors}
-\label{term:norm_of_vectors}
+\label{term:norm_of_vectors}\index{Norms}\index{Norm of vectors}
 A norm is a function that assigns a strictly positive length or size to each vector in a vector space, other than the zero vector which has zero length assigned to it.
 
 \subsection{Euclidean norm of a vector}
-\label{term:euclidean_norm}
+\label{term:euclidean_norm}\index{Euclidean norm}
 A.k.a., $L^2$-norm, $L^2$-distance, $\ell^2$-norm, $\ell^2$-distance, Euclidean length. And is defined for an $n$-dimensional vector $\vec x = (x_1,x_2,\cdots, x_n)^T$ on $\mathbb{R}^n$ as:
 \[
 ||\vec x|| = \sqrt{x^2_1+x^2_2+\cdots+x^2_n} = \sqrt{\vec x \cdot \vec x} = \sqrt{\vec x^T \vec x}
@@ -1152,14 +1161,14 @@ A.k.a., $L^2$-norm, $L^2$-distance, $\ell^2$-norm, $\ell^2$-distance, Euclidean 
 Thus, the Euclidean norm of the vector $\vec x$ is the square root of the inner-product of the vector $\vec x$ to itself. So, square of the Euclidean norm $||\vec x||^2 = \vec x^T\vec x$, simply the inner-produc of the vector $\vec x$ to itself.
 
 \subsection{Manhattan norm of a vector}
-\label{term:manhattan_norm}
+\label{term:manhattan_norm}\index{Manhattan norm}
 A.k.a., taxicab norm, $L_1$-norm, $L_1$-distance, Manhattan-distance. 
 
 \[ ||\vec x||_1 = \sum_{i=1}^n|x_i|\]
 The name relates to the distance a taxi has to drive in a rectangular street grid to get from the origin to the point $x$.
 
 
-\subsection{$p$-Norm of a vector}
+\subsection{$p$-Norm of a vector}\index{\emph{p}-norm}
 \label{term:p-norm}
 For any real number $p\ge 1$:
 \begin{equation}
@@ -1167,7 +1176,7 @@ For any real number $p\ge 1$:
 \end{equation}
 
 \subsection{Maximum Norm of a vector}
-\label{term:maximum_norm}
+\label{term:maximum_norm}\index{Maximum norm}
 A.k.a., special case of inifinity norm, uniform norm or supremum norm. It is defined as:
 \begin{equation}
 \nonumber ||\vec x||_\infty = \text{max}\left( |x_1|, |x_2|, \cdots, |x_n|\right)
@@ -1175,7 +1184,7 @@ A.k.a., special case of inifinity norm, uniform norm or supremum norm. It is def
 
 
 \section{Norm of Matrices}
-\label{term:norm_of_matrices}
+\label{term:norm_of_matrices}\index{Norms}\index{Matrix norms}
 The norm of a square matrix $A$ is a non-negative real number denoted by $||A||$. There are several different ways of defining a matrix norm, but they all share the following properties:
 \begin{itemize}
 \item $||A||\ge 0$, for any square matrix $A$.
@@ -1187,21 +1196,21 @@ The norm of a square matrix $A$ is a non-negative real number denoted by $||A||$
 The norm of a matrix is a measure of how large its elements are. It is a way of determining the size of a matrix which is not necessarilty related to how many rows or columns the matrix has. So, the norm of a matrix is a non-negative real number that is a measure of the magnitude of the matrix.
 
 \subsection{$L_1$-norm of a matrix}
-\label{term:l1_norm_of_a_matrix}
+\label{term:l1_norm_of_a_matrix}\index{$L_1$-norm}
 It is the maximum absolute column sum.
 \begin{equation}
 \nonumber ||A||_1 = \max_{1\le j\le n}\left( \sum_{i=1}^m|a_{ij}|\right)
 \end{equation}
 
 \subsection{Inifinity-norm of a matrix}
-\label{term:infinity_norm_of_a_matrix}
+\label{term:infinity_norm_of_a_matrix}\index{Infinity norm}
 It is the maximum absolute row sum.
 \begin{equation}
 \nonumber ||A||_1 = \max_{1\le i\le m}\left( \sum_{j=1}^n|a_{ij}|\right)
 \end{equation}
 
 \subsection{Euclidean-norm of a matrix}
-\label{term:euclidean_norm_of_a_matrix}
+\label{term:euclidean_norm_of_a_matrix}\index{Euclidean norm}\index{Frobenius norm}
 A.k.a., Frobenius norm of a matrix. It is the square root of the sum of all the squares of the elements.
 \begin{equation}
 \nonumber ||A||_F = \sqrt{ \sum_{i=1}^m\sum_{j=1}^n (a_{ij})^2 } = \sqrt{\text{trace}(AA^T)} = \sqrt{\text{trace}(A^TA)}
@@ -1212,7 +1221,7 @@ And the square of the Frobenius norm of the matrix $A$ is:
 \end{equation}
 
 \subsection{$L_{2,1}$-norm of a matrix}
-\label{term:l_2,1_norm_of_a_matrix}
+\label{term:l_2,1_norm_of_a_matrix}\index{$L_{2,1}$ norm}
 Let $(\vec a_1, \vec a_2, \cdots, \vec a_n)$ be the columns of matrix $A$. The $L_{2,1}$ norm\cite{ding2006r} is a sum of Euclidean norm of columns:
 \begin{equation}
 \nonumber ||A||_{2,1} = \sum_{j=1}^n||\vec{a_j}||_2 = \sum_{j=1}^n\left( \sum_{i=1}^m|a_{ij}|^2\right)^\frac{1}{2}
@@ -1261,7 +1270,7 @@ $L_{2,1}$ norm can be generalized into $L_{p,q}$ norm:
 \end{knitrout}
 
 \section{Derivative}
-\label{term:derivative}
+\label{term:derivative}\index{Derivative}
 The fundamental definition of derivative of the function $f(x)$ is:
 \begin{equation}
 f'(x) = \lim_{\Delta x\rightarrow 0}\dfrac{f(x+\Delta x)-f(x)}{\Delta x}\label{eqn:derivative-1}\\
@@ -1471,7 +1480,7 @@ Similarly, the first derivative of $z$ with respect to $y$ would be:
 \end{knitrout}
 
 \section{Directional Derivative}
-\label{term:directional_derivative}
+\label{term:directional_derivative}\index{Directional Derivative}
 Let the function $f(x,y)$ be the height of a mountain range at each point $\vec x=(x,y)$\cite{mathInsight:DirectionalDerivative} (Figure \ref{fig:directional_derivative_1}). If you stand at some point $\vec x=\vec a$, the slope of the ground in front of you will depend on the direction you are facing. It might slope steeply up in one direction, be relatively flat in another direction, and slope steeply down in yet another direction.
 
 The partial derivatives of $f$ will give the slope $\frac{\partial f}{\partial x}$ in the positive $x$ direction and the slope $\frac{\partial f}{\partial y}$ in the positive $y$ direction. We can generalize the partial derivatives to calculate the slope in any direction. The result is called the directional derivative.
@@ -1584,6 +1593,7 @@ So, we can compute the directional derivative by
 \end{eqnarray}
 
 \section{Gradient as a derivative}
+\label{term:Gradient_as_a_derivative}\index{Gradient}
 A Gradient is the derivative of a scalar with respect to a vector. For vector $\vec x = (x_1, x_2, \cdots, x_n)^T$.
 \begin{eqnarray}
 \nonumber \dfrac{\partial f(\vec x)}{\partial \vec x} = \begin{pmatrix} \left[ \dfrac{\partial f(\vec x)}{\partial x_1}\right]\\
@@ -1604,6 +1614,7 @@ x^2_3+x^2_2+2x_1+2x_2+2x_3\\
 \end{eqnarray}
 
 \section{Jacobian as a derivative}
+\label{term:Jacobian_as_a_derivative}\index{Jacobian}
 A Jacobian is a derivative of a vector with respect to a transposed vector. For a vector $\vec x = (x_1, x_2, \cdots, x_n)^T$, and a $k$ dimensional function $\vec f = (f_1, f_2, \cdots, f_k)^T$, we have
 \begin{eqnarray}
 \nonumber \dfrac{\partial \overrightarrow{f(\vec{x})}}{\partial \vec x^T} = \begin{pmatrix}
@@ -1636,6 +1647,7 @@ Then the Jacobian is
 \end{eqnarray}
 
 \section{Hessian as a derivative}
+\label{term:Hessian}\index{Hessian}
 The Hessian is the derivative of a Gradient with respect to a transposed vector. For a given vector $\vec x =(x_1, x_2, \cdots, x_n)^T$, we have the gradient
 \begin{eqnarray}
 \nonumber \dfrac{\partial f(\vec x)}{\partial \vec x} = \begin{pmatrix} \left[ \dfrac{\partial f(\vec x)}{\partial x_1}\right]\\
@@ -1668,8 +1680,74 @@ Hence, the Hessian would be
  2x_3+2 & 2x_3+2 & 2x_1+2x_2+2
  \end{pmatrix}
 \end{eqnarray}
+
+
+\section{Hadamard Product}
+\label{term:hadamard_product}\index{Hadamard Product}\index{Schur product}
+For two matrices $\mathbf{A}$ and $\mathbf{B}$ of the same dimensions $n\times n$, the Hadamard product $\mathbf{A}\circ \mathbf{B}$ (a.k.a elementwise product, entrywise product, Schur product) is a matrix of the same dimension, the $i,j$ element of $\mathbf{A}$ is multiplied with $i,j$ element of $\mathbf{B}$, that is:
+\[ (\mathbf{A} \circ \mathbf{B})_{ij} = A_{ij}B_{ij}\]
+And can be displayed fully by:
+\[
+ \mathbf{A} \circ \mathbf{B} = \begin{pmatrix} A_{11} & A_{12} & \cdots & A_{1m} \\
+ A_{21} & A_{22} & \cdots & A_{2m} \\
+\vdots & \vdots & \ddots & \vdots \\
+ A_{n1} & A_{n2} & \cdots & A_{nm} \\
+\end{pmatrix}\circ\begin{pmatrix}
+ B_{11} & B_{12} & \cdots & B_{1m} \\
+ B_{21} & B_{22} & \cdots & B_{2m} \\
+\vdots & \vdots & \ddots & \vdots \\
+ B_{n1} & B_{n2} & \cdots & B_{nm} \\
+\end{pmatrix} =\begin{pmatrix}
+ A_{11}B_{11} & A_{12}B_{12} & \cdots & A_{1m}B_{1m} \\
+ A_{21}B_{21} & A_{22}B_{22} & \cdots & A_{2m}B_{2m} \\
+\vdots & \vdots & \ddots & \vdots \\
+ A_{n1}B_{n1} & A_{n2}B_{n2} & \cdots & A_{nm}B_{nm} \\
+\end{pmatrix}
+\]
+
+\section{Kronecker Product}
+\label{term:kronecker_product}\index{Kronecker Product}
+For two matrices $\mathbf{A}$ and $\mathbf{B}$ of any different dimensions $m \times n$ and $p\times q$ respectively, the Kronecker product is the matrix 
+\[ \mathbf{A} \otimes \mathbf{B} = \begin{pmatrix}
+A_{11}\mathbf{B} & A_{12}\mathbf{B} & \cdots & A_{1n}\mathbf{B} \\
+ A_{21}\mathbf{B} & A_{22}\mathbf{B} & \cdots & A_{2n}\mathbf{B} \\
+\vdots & \vdots & \ddots & \vdots \\
+ A_{m1}\mathbf{B} & A_{m2}\mathbf{B} & \cdots & A_{mn}\mathbf{B} \\
+\end{pmatrix} \]
+with dimensions $mp \times nq$. For instance, Suppose $\mathbf{X} = \begin{pmatrix}a & b\\ c & d\end{pmatrix}$ and $\mathbf{Y} = \begin{pmatrix}s & t & u\\ v & w & z\end{pmatrix}$, then
+\[ 
+\mathbf{X} \otimes \mathbf{Y} = \begin{pmatrix}
+a\mathbf{Y} & b\mathbf{Y}\\ c\mathbf{Y} & d\mathbf{Y}
+\end{pmatrix} = \begin{pmatrix}
+as & at & au & bs & bt & bu\\
+av & aw & az & bv & bw & bz\\
+cs & ct & cu & ds & dt & du\\
+cv & cw & cz & dv & dw & dz
+\end{pmatrix}
+\]
+\section{Trace of a Matrix}
+\label{term:trace_of_a_matrix}\index{Trace of Matrix}
+The trace of an $n\times n$ square matrix $A$ is defined to be the sum of elements on the main diagonal (i.e., the diagonal from the upper left to the lower right corner):
+\[
+tr(A) = \sum_{i=1}^nA_{i,i}
+\]
+Here are some properties of trace:
+\begin{itemize}
+	\item It is a linear mapping. That is for two square matrices $\mathbf{A}$ and $\mathbf{B}$: 
+		\begin{itemize}
+			\item $tr(\mathbf{A}+\mathbf{B}) = tr(\mathbf{A}) + tr(\mathbf{B})$
+			\item $tr(c\mathbf{A}) = c\cdot tr(\mathbf{A})$ for any scalar $c$
+		\end{itemize}
+	\item Transposition of dependent variable: $tr(\mathbf{Y}) = tr(\mathbf{Y}^T)$, and thus $\dfrac{\partial tr(\mathbf{Y})}{\partial \mathbf{X}} = \dfrac{\partial tr(\mathbf{Y}^T)}{\partial \mathbf{X}}$
+	\item Cyclic permuation: $tr(\mathbf{ABCD}) = tr(\mathbf{BCDA}) = tr(\mathbf{CDAB}) = tr(\mathbf{DABC})$
+	\item If $\mathbf{U}, \mathbf{H}$ are two squared matrices of same dimension, and you want to multiply all the paired indices ($u_{ij}h_{ij})$ and add all the multiplications, you can use $tr({\mathbf{U}^T\mathbf{H}}) = \sum_{j=1}^n\sum_{i=1}^nu_{ij}h_{ij} = \sum_{ij}(\mathbf{U}\circ \mathbf{Y})_{ij}$ (using Hadamard product\index{Hadamard Product})
+\end{itemize}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\bibliographystyle{IEEEtran}
 	\bibliography{Report}
-
+	\pagebreak
+	\section*{Index}
+	\printindex
+	
 \end{document}
