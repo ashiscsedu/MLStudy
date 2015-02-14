@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.5)  13 FEB 2015 17:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.5)  14 FEB 2015 12:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1271,12 +1271,12 @@ l.1733 \]
 
 ) [30]
 (./MLPrimer--using-R.ind)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1753.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1755.
  [31]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1753.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1755.
  (./MLPrimer--using-R.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1753.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1753.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1755.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1755.
 
 Package rerunfilecheck Info: File `MLPrimer--using-R.out' has not changed.
 (rerunfilecheck)             Checksum: 664D5488F6B38BFBAB41DBB1DB28BE58;2663.
@@ -1287,11 +1287,11 @@ Package rerunfilecheck Info: File `MLPrimer--using-R.brf' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 2.25pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1753.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1755.
  ) 
 Here is how much of TeX's memory you used:
- 11124 strings out of 493304
- 170115 string characters out of 6139872
+ 11127 strings out of 493304
+ 170133 string characters out of 6139872
  290433 words of memory out of 5000000
  14239 multiletter control sequences out of 15000+600000
  48676 words of font info for 115 fonts, out of 8000000 for 9000
@@ -1322,10 +1322,10 @@ exlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
 i8a.pfb>
-Output written on MLPrimer--using-R.pdf (31 pages, 870200 bytes).
+Output written on MLPrimer--using-R.pdf (31 pages, 870918 bytes).
 PDF statistics:
- 665 PDF objects out of 1000 (max. 8388607)
- 584 compressed objects within 6 object streams
- 119 named destinations out of 1000 (max. 500000)
+ 669 PDF objects out of 1000 (max. 8388607)
+ 588 compressed objects within 6 object streams
+ 122 named destinations out of 1000 (max. 500000)
  398 words of extra memory for PDF output out of 10000 (max. 10000000)
 

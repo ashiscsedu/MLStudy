@@ -1486,14 +1486,16 @@ tr(A) = \sum_{i=1}^nA_{i,i}
 \]
 Here are some properties of trace:
 \begin{itemize}
-	\item It is a linear mapping. That is for two square matrices $\mathbf{A}$ and $\mathbf{B}$: 
-		\begin{itemize}
+	\item It is a linear operator. That is for two square matrices $\mathbf{A}$ and $\mathbf{B}$: 
+		\begin{enumerate}
 			\item $tr(\mathbf{A}+\mathbf{B}) = tr(\mathbf{A}) + tr(\mathbf{B})$
 			\item $tr(c\mathbf{A}) = c\cdot tr(\mathbf{A})$ for any scalar $c$
-		\end{itemize}
+			\item $\partial tr(\mathbf{X}) = tr(\partial X)$
+		\end{enumerate}
 	\item Transposition of dependent variable: $tr(\mathbf{Y}) = tr(\mathbf{Y}^T)$, and thus $\dfrac{\partial tr(\mathbf{Y})}{\partial \mathbf{X}} = \dfrac{\partial tr(\mathbf{Y}^T)}{\partial \mathbf{X}}$
 	\item Cyclic permuation: $tr(\mathbf{ABCD}) = tr(\mathbf{BCDA}) = tr(\mathbf{CDAB}) = tr(\mathbf{DABC})$
 	\item If $\mathbf{U}, \mathbf{H}$ are two squared matrices of same dimension, and you want to multiply all the paired indices ($u_{ij}h_{ij})$ and add all the multiplications, you can use $tr({\mathbf{U}^T\mathbf{H}}) = \sum_{j=1}^n\sum_{i=1}^nu_{ij}h_{ij} = \sum_{ij}(\mathbf{U}\circ \mathbf{Y})_{ij}$ (using Hadamard product\index{Hadamard Product})
+	\item If $\mathbf{A}$ is a square $n\times n$ matrix with real or complex entries and if $\lambda_1, \cdots, \lambda_n$ are the eigenvalues of $\mathbf{A}$, then $tr(\mathbf{A}) = \sum_i\lambda_i$. This follows from the fact that $\mathbf{A}$ is always similar to its Jordan form, an upper-triangular matrix having $\lambda_1, \cdots, \lambda_n$ on their main diagonal, and trace operator would return their sum. [In contrast, the determinant of $\mathbf{A}$ is the product of its eigenvalues, i.e., $det(\mathbf{A}) = \prod_i\lambda_i$]. And more generally, $tr(\mathbf{A}^k) = \sum_i\lambda^k_i$
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
