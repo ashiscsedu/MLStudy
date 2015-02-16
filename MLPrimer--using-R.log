@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.19)  16 FEB 2015 00:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.19)  16 FEB 2015 01:28
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -765,339 +765,330 @@ Package pdftex.def Info: figures/basis_graph.pdf used on input line 204.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [2] [3 <./figures/basis_graph.pdf>]
-Package color Info: Redefining color shadecolor on input line 291.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 292.
+Package color Info: Redefining color shadecolor on input line 299.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 300.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <11> not available
-(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 293.
+(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 301.
 LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <11> not available
-(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 294.
-LaTeX Font Info:    Try loading font information for TS1+pcr on input line 349.
+(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 302.
+LaTeX Font Info:    Try loading font information for TS1+pcr on input line 357.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1pcr.fd
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
 )
 LaTeX Font Info:    Font shape `TS1/pcr/m/it' in size <11> not available
-(Font)              Font shape `TS1/pcr/m/sl' tried instead on input line 349.
+(Font)              Font shape `TS1/pcr/m/sl' tried instead on input line 357.
  [4] [5] [6] [7pdfTeX warning (ext4): destination with the same identifier (nam
 e{equation.13.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.586 \]
-        ]pdfTeX warning (ext4): destination with the same identifier (name{equa
-tion.13.5}) has been already used, duplicate ignored
+l.582 \end{array} \right] \]
+                            ]pdfTeX warning (ext4): destination with the same i
+dentifier (name{equation.13.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.588  \begin{eqnarray}
+l.596  \begin{eqnarray}
                        pdfTeX warning (ext4): destination with the same identif
 ier (name{equation.13.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.588  \begin{eqnarray}
+l.596  \begin{eqnarray}
                        pdfTeX warning (ext4): destination with the same identif
 ier (name{equation.13.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.588  \begin{eqnarray}
+l.596  \begin{eqnarray}
                        pdfTeX warning (ext4): destination with the same identif
 ier (name{equation.13.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.588  \begin{eqnarray}
-                       pdfTeX warning (ext4): destination with the same identif
-ier (name{equation.13.5}) has been already used, duplicate ignored
+l.596  \begin{eqnarray}
+                        [8]pdfTeX warning (ext4): destination with the same ide
+ntifier (name{equation.13.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.651 \begin{eqnarray}
+l.667 \begin{eqnarray}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.13.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.651 \begin{eqnarray}
+l.667 \begin{eqnarray}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.13.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.651 \begin{eqnarray}
+l.667 \begin{eqnarray}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.13.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.651 \begin{eqnarray}
-                       [8]pdfTeX warning (ext4): destination with the same iden
-tifier (name{equation.13.5}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.709 \begin{eqnarray}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.13.5}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.709 \begin{eqnarray}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.13.5}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.709 \begin{eqnarray}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.13.5}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.709 \begin{eqnarray}
+l.667 \begin{eqnarray}
                        [9]pdfTeX warning (ext4): destination with the same iden
 tifier (name{equation.13.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.718  \begin{eqnarray}
+l.725 \begin{eqnarray}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{equation.13.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.725 \begin{eqnarray}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{equation.13.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.725 \begin{eqnarray}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{equation.13.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.725 \begin{eqnarray}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{equation.13.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.734  \begin{eqnarray}
                        pdfTeX warning (ext4): destination with the same identif
 ier (name{equation.13.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.718  \begin{eqnarray}
+l.734  \begin{eqnarray}
                        pdfTeX warning (ext4): destination with the same identif
 ier (name{equation.13.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.718  \begin{eqnarray}
+l.734  \begin{eqnarray}
                        pdfTeX warning (ext4): destination with the same identif
 ier (name{equation.13.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.718  \begin{eqnarray}
+l.734  \begin{eqnarray}
                         [10]
-Package color Info: Redefining color shadecolor on input line 891.
+Package color Info: Redefining color shadecolor on input line 907.
  [11] [12]
-Package color Info: Redefining color shadecolor on input line 998.
- [13] [14pdfTeX warning (ext4): destination with the same identifier (name{equa
-tion.20.8}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1098 \end{eqnarray}
-                     ]
-Package color Info: Redefining color shadecolor on input line 1114.
+Package color Info: Redefining color shadecolor on input line 1014.
+ [13] [14]
+Package color Info: Redefining color shadecolor on input line 1130.
  [15pdfTeX warning (ext4): destination with the same identifier (name{equation.
-20.10}) has been already used, duplicate ignored
+20.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1154 \subsection
-                  {Euclidean norm of a vector}]
+l.1155 \end{kframe}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{equation.20.10}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1155 \end{kframe}
+                   ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1171.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1171.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1198.
+(hyperref)                removing `math shift' on input line 1187.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 1198.
+(hyperref)                removing `math shift' on input line 1187.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1198.
+(hyperref)                removing `math shift' on input line 1214.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 1214.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1214.
 
 [16pdfTeX warning (ext4): destination with the same identifier (name{equation.2
 1.10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1210 \end{equation}
-                     ]pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.22.10}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1215 \begin{equation}
-                       pdfTeX warning (ext4): destination with the same identif
-ier (name{equation.22.10}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1219 \begin{equation}
-                       
+l.1219 \end{equation}
+                     ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1223.
+(hyperref)                removing `math shift' on input line 1239.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 1223.
+(hyperref)                removing `subscript' on input line 1239.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1223.
+(hyperref)                removing `math shift' on input line 1239.
 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.22.1
-0}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1226 \begin{equation}
-                       pdfTeX warning (ext4): destination with the same identif
-ier (name{equation.22.10}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1230 \begin{equation}
-                       
-Package color Info: Redefining color shadecolor on input line 1235.
-LaTeX Font Info:    Try loading font information for OMS+pcr on input line 1260
+Package color Info: Redefining color shadecolor on input line 1251.
+LaTeX Font Info:    Try loading font information for OMS+pcr on input line 1276
 .
-
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omspcr.fd
 File: omspcr.fd 
 )
 LaTeX Font Info:    Font shape `OMS/pcr/m/it' in size <11> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1260.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1276.
 
  [17pdfTeX warning (ext4): destination with the same identifier (name{equation.
 22.10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1277 \end{equation}
-                     ]
+l.1285 \end{kframe}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{equation.22.10}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1285 \end{kframe}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{equation.22.10}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1285 \end{kframe}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{equation.22.10}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1285 \end{kframe}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{equation.22.10}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1285 \end{kframe}
+                   ]
 <figures/derivative-1.pdf, id=346, 892.14934pt x 911.12778pt>
 File: figures/derivative-1.pdf Graphic file (type pdf)
 
 <use figures/derivative-1.pdf>
-Package pdftex.def Info: figures/derivative-1.pdf used on input line 1285.
+Package pdftex.def Info: figures/derivative-1.pdf used on input line 1301.
 (pdftex.def)             Requested size: 223.03679pt x 227.78139pt.
 
 <figures/derivative-2.pdf, id=350, 892.14934pt x 934.03569pt>
 File: figures/derivative-2.pdf Graphic file (type pdf)
 
 <use figures/derivative-2.pdf>
-Package pdftex.def Info: figures/derivative-2.pdf used on input line 1297.
+Package pdftex.def Info: figures/derivative-2.pdf used on input line 1313.
 (pdftex.def)             Requested size: 223.03679pt x 233.50835pt.
  [18pdfTeX warning (ext4): destination with the same identifier (name{equation.
 23.11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1315 	\item
-              if $f'(p) = \left.\dfrac{df}{dx}\right|_{x=p} > 0$, then $f(x)...
-pdfTeX warning (ext4): destination with the same identifier (name{equation.23.1
-1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1315 	\item
-              if $f'(p) = \left.\dfrac{df}{dx}\right|_{x=p} > 0$, then $f(x)...
- <./figures/derivative-1.pdf>]
-<figures/derivative-3.pdf, id=368, 828.95892pt x 432.92386pt>
+l.1328 \end{eqnarray}
+                      <./figures/derivative-1.pdf>]
+<figures/derivative-3.pdf, id=367, 828.95892pt x 432.92386pt>
 File: figures/derivative-3.pdf Graphic file (type pdf)
 
 <use figures/derivative-3.pdf>
-Package pdftex.def Info: figures/derivative-3.pdf used on input line 1323.
+Package pdftex.def Info: figures/derivative-3.pdf used on input line 1339.
 (pdftex.def)             Requested size: 414.47845pt x 216.4614pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[19 <./figures/derivative-2.pdf>] [20 <./figures/derivative-3.pdf>]pdfTeX warni
-ng (ext4): destination with the same identifier (name{equation.23.11}) has been
- already used, duplicate ignored
+[19pdfTeX warning (ext4): destination with the same identifier (name{equation.2
+3.11}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1345  	\item
+               if $\left.\dfrac{d^2f}{dx^2}\right|_{x=p} > 0$ at $x=p$, then...
+ <./figures/derivative-2.pdf>] [20 <./figures/derivative-3.pdf>]pdfTeX warning 
+(ext4): destination with the same identifier (name{equation.23.11}) has been al
+ready used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1352  \begin{eqnarray}
+l.1368  \begin{eqnarray}
                         pdfTeX warning (ext4): destination with the same identi
 fier (name{equation.23.11}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1352  \begin{eqnarray}
+l.1368  \begin{eqnarray}
                         pdfTeX warning (ext4): destination with the same identi
 fier (name{equation.23.11}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1352  \begin{eqnarray}
+l.1368  \begin{eqnarray}
                         pdfTeX warning (ext4): destination with the same identi
 fier (name{equation.23.11}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1352  \begin{eqnarray}
+l.1368  \begin{eqnarray}
                         
 <figures/partial-derivative-1.pdf, id=389, 982.81718pt x 513.22331pt>
 File: figures/partial-derivative-1.pdf Graphic file (type pdf)
 
 <use figures/partial-derivative-1.pdf>
 Package pdftex.def Info: figures/partial-derivative-1.pdf used on input line 13
-74.
+90.
 (pdftex.def)             Requested size: 491.4074pt x 256.61102pt.
-Package color Info: Redefining color shadecolor on input line 1379.
-LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <11> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1386.
 
- [21 <./figures/partial-derivative-1.pdf>] <figure/minimal-Plot-surface-1-1.pdf
-, id=399, 505.89pt x 505.89pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package color Info: Redefining color shadecolor on input line 1395.
+LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <11> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1402.
+
+<figure/minimal-Plot-surface-1-1.pdf, id=390, 505.89pt x 505.89pt>
 File: figure/minimal-Plot-surface-1-1.pdf Graphic file (type pdf)
 
 <use figure/minimal-Plot-surface-1-1.pdf>
 Package pdftex.def Info: figure/minimal-Plot-surface-1-1.pdf used on input line
- 1404.
+ 1420.
 (pdftex.def)             Requested size: 433.62pt x 433.62885pt.
-Package color Info: Redefining color shadecolor on input line 1418.
- [22 <./figure/minimal-Plot-surface-1-1.pdf>]
-Overfull \hbox (18.59926pt too wide) in paragraph at lines 1433--1433
+ [21]
+Overfull \vbox (44.23956pt too high) has occurred while \output is active []
+
+
+[22 <./figures/partial-derivative-1.pdf> <./figure/minimal-Plot-surface-1-1.pdf
+>]
+Package color Info: Redefining color shadecolor on input line 1434.
+
+Overfull \hbox (18.59926pt too wide) in paragraph at lines 1449--1449
 []        []\OT1/pcr/m/n/11 main[][]=[][]"The surface plot of z with an interse
 cting plane with holding y=1"[][])[][] 
  []
 
-<figure/minimal-Plot-surface-2-1.pdf, id=410, 505.89pt x 505.89pt>
+<figure/minimal-Plot-surface-2-1.pdf, id=409, 505.89pt x 505.89pt>
 File: figure/minimal-Plot-surface-2-1.pdf Graphic file (type pdf)
 
 <use figure/minimal-Plot-surface-2-1.pdf>
 Package pdftex.def Info: figure/minimal-Plot-surface-2-1.pdf used on input line
- 1439.
+ 1455.
 (pdftex.def)             Requested size: 216.81pt x 216.81056pt.
-pdfTeX warning (ext4): destination with the same identifier (name{equation.24.1
-1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1449 \begin{eqnarray}
-                       pdfTeX warning (ext4): destination with the same identif
-ier (name{equation.24.11}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1449 \begin{eqnarray}
-                       pdfTeX warning (ext4): destination with the same identif
-ier (name{equation.24.11}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1449 \begin{eqnarray}
-                       pdfTeX warning (ext4): destination with the same identif
-ier (name{equation.24.11}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1449 \begin{eqnarray}
-                       
-Package color Info: Redefining color shadecolor on input line 1453.
+Package color Info: Redefining color shadecolor on input line 1469.
 
-Overfull \hbox (18.59926pt too wide) in paragraph at lines 1468--1468
+Overfull \hbox (18.59926pt too wide) in paragraph at lines 1484--1484
 []        []\OT1/pcr/m/n/11 main[][]=[][]"The surface plot of z with an interse
 cting plane with holding x=1"[][])[][] 
  []
 
+[23pdfTeX warning (ext4): destination with the same identifier (name{equation.2
+4.11}) has been already used, duplicate ignored
 
-Overfull \vbox (0.33682pt too high) detected at line 1472
- []
-
-[23 <./figure/minimal-Plot-surface-2-1.pdf>]
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1488 \end{kframe}
+                    <./figure/minimal-Plot-surface-2-1.pdf>]
 <figure/minimal-Plot-surface-3-1.pdf, id=422, 505.89pt x 505.89pt>
 File: figure/minimal-Plot-surface-3-1.pdf Graphic file (type pdf)
 
 <use figure/minimal-Plot-surface-3-1.pdf>
 Package pdftex.def Info: figure/minimal-Plot-surface-3-1.pdf used on input line
- 1474.
+ 1490.
 (pdftex.def)             Requested size: 216.81pt x 216.81056pt.
 
 <figures/directional-derivative-1.pdf, id=425, 827.09pt x 868.21507pt>
@@ -1105,7 +1096,7 @@ File: figures/directional-derivative-1.pdf Graphic file (type pdf)
 
 <use figures/directional-derivative-1.pdf>
 Package pdftex.def Info: figures/directional-derivative-1.pdf used on input lin
-e 1495.
+e 1511.
 (pdftex.def)             Requested size: 413.54398pt x 434.10648pt.
 
 
@@ -1117,146 +1108,146 @@ e{equation.25.13}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1566 S
+l.1582 S
         o, using the relationship among directional derivative and the gradi...
 pdfTeX warning (ext4): destination with the same identifier (name{equation.25.1
 3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1566 S
+l.1582 S
         o, using the relationship among directional derivative and the gradi...
 ]pdfTeX warning (ext4): destination with the same identifier (name{equation.25.
 13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1567 \begin{eqnarray}
+l.1583 \begin{eqnarray}
                        pdfTeX warning (ext4): destination with the same identif
 ier (name{equation.25.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1567 \begin{eqnarray}
+l.1583 \begin{eqnarray}
                        pdfTeX warning (ext4): destination with the same identif
 ier (name{equation.25.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1567 \begin{eqnarray}
+l.1583 \begin{eqnarray}
                        pdfTeX warning (ext4): destination with the same identif
 ier (name{equation.25.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1567 \begin{eqnarray}
+l.1583 \begin{eqnarray}
                        pdfTeX warning (ext4): destination with the same identif
 ier (name{equation.25.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1578 \begin{eqnarray}
+l.1594 \begin{eqnarray}
                        pdfTeX warning (ext4): destination with the same identif
 ier (name{equation.25.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1578 \begin{eqnarray}
+l.1594 \begin{eqnarray}
                        pdfTeX warning (ext4): destination with the same identif
 ier (name{equation.25.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1578 \begin{eqnarray}
+l.1594 \begin{eqnarray}
                        pdfTeX warning (ext4): destination with the same identif
 ier (name{equation.25.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1578 \begin{eqnarray}
+l.1594 \begin{eqnarray}
                        pdfTeX warning (ext4): destination with the same identif
 ier (name{equation.25.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1589 \begin{eqnarray}
+l.1605 \begin{eqnarray}
                        pdfTeX warning (ext4): destination with the same identif
 ier (name{equation.25.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1589 \begin{eqnarray}
+l.1605 \begin{eqnarray}
                        pdfTeX warning (ext4): destination with the same identif
 ier (name{equation.25.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1589 \begin{eqnarray}
+l.1605 \begin{eqnarray}
                        pdfTeX warning (ext4): destination with the same identif
 ier (name{equation.25.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1589 \begin{eqnarray}
+l.1605 \begin{eqnarray}
                         [27]pdfTeX warning (ext4): destination with the same id
 entifier (name{equation.25.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1618 \begin{eqnarray}
+l.1636 \begin{eqnarray}
                        pdfTeX warning (ext4): destination with the same identif
 ier (name{equation.25.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1618 \begin{eqnarray}
+l.1636 \begin{eqnarray}
                        pdfTeX warning (ext4): destination with the same identif
 ier (name{equation.25.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1618 \begin{eqnarray}
+l.1636 \begin{eqnarray}
                        pdfTeX warning (ext4): destination with the same identif
 ier (name{equation.25.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1618 \begin{eqnarray}
+l.1636 \begin{eqnarray}
                        pdfTeX warning (ext4): destination with the same identif
 ier (name{equation.25.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1634 Solution: \begin{eqnarray}
+l.1652 Solution: \begin{eqnarray}
                                  pdfTeX warning (ext4): destination with the sa
 me identifier (name{equation.25.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1634 Solution: \begin{eqnarray}
+l.1652 Solution: \begin{eqnarray}
                                  pdfTeX warning (ext4): destination with the sa
 me identifier (name{equation.25.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1634 Solution: \begin{eqnarray}
+l.1652 Solution: \begin{eqnarray}
                                  pdfTeX warning (ext4): destination with the sa
 me identifier (name{equation.25.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1634 Solution: \begin{eqnarray}
+l.1652 Solution: \begin{eqnarray}
                                   [28] [29pdfTeX warning (ext4): destination wi
 th the same identifier (name{equation.26.13}) has been already used, duplicate 
 ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1680 \end{eqnarray}
+l.1698 \end{eqnarray}
                      ] [30pdfTeX warning (ext4): destination with the same iden
 tifier (name{equation.27.13}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1737 \end{eqnarray}
+l.1755 \end{eqnarray}
                      pdfTeX warning (ext4): destination with the same identifie
 r (name{equation.28.13}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1737 \end{eqnarray}
+l.1755 \end{eqnarray}
                      pdfTeX warning (ext4): destination with the same identifie
 r (name{equation.28.13}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1737 \end{eqnarray}
+l.1755 \end{eqnarray}
                      ] [31pdfTeX warning (ext4): destination with the same iden
 tifier (name{equation.28.13}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1800 	\item I
+l.1818 	\item I
                f $\mathbf{A}$ is a square $n\times n$ matrix with real or co...
 ] (./MLPrimer--using-R.bbl (./MLPrimer--using-R.brf)
 \tf@brf=\write5
@@ -1264,29 +1255,29 @@ l.1800 	\item I
 
 ) [32]
 (./MLPrimer--using-R.ind)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1810.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1828.
  [33]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1810.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1828.
  (./MLPrimer--using-R.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1810.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1810.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1828.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1828.
 
 Package rerunfilecheck Info: File `MLPrimer--using-R.out' has not changed.
 (rerunfilecheck)             Checksum: B329133E117AFAF5008A75A8D87F8453;2832.
 Package rerunfilecheck Info: File `MLPrimer--using-R.brf' has not changed.
-(rerunfilecheck)             Checksum: 4E30F6FA69C572E27E1708FFE4F49545;881.
+(rerunfilecheck)             Checksum: 34F426736238A95C4EE95EEE0B290641;1001.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 2.25pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1810.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1828.
  ) 
 Here is how much of TeX's memory you used:
- 11135 strings out of 493304
- 170266 string characters out of 6139871
- 290601 words of memory out of 5000000
- 14242 multiletter control sequences out of 15000+600000
+ 11140 strings out of 493304
+ 170375 string characters out of 6139871
+ 291532 words of memory out of 5000000
+ 14246 multiletter control sequences out of 15000+600000
  48676 words of font info for 115 fonts, out of 8000000 for 9000
  960 hyphenation exceptions out of 8191
  40i,20n,40p,1662b,433s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1306,20 +1297,20 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/l
-atxfont/line10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/s
-ymbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrb8a
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/font
-s/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
-mes/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
->
-Output written on MLPrimer--using-R.pdf (33 pages, 884920 bytes).
+lic/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont
+/line10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/
+msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utm
+r8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on MLPrimer--using-R.pdf (33 pages, 893376 bytes).
 PDF statistics:
- 694 PDF objects out of 1000 (max. 8388607)
- 609 compressed objects within 7 object streams
- 127 named destinations out of 1000 (max. 500000)
+ 704 PDF objects out of 1000 (max. 8388607)
+ 618 compressed objects within 7 object streams
+ 128 named destinations out of 1000 (max. 500000)
  414 words of extra memory for PDF output out of 10000 (max. 10000000)
 

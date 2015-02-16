@@ -172,6 +172,14 @@ A set (i.e., family) of vectors is linearly dependent if a member vector is in t
 
 A set of vectors which is linearly independent and spans some vector space, forms a \hyperref[term:basis]{basis} for that vector space. For example, the vector space of all polynomials in $x$ over the reals has the infinite subset $\{1, x, x^2, x^3, \cdots\}$ as a basis.
 
+Here are some more properties of rank of matrices:
+\begin{itemize}
+	\item $\text{rank}(\mathbf{A}) = \text{rank}(\mathbf{A}^T)$, for any matrix $\mathbf{A}$.
+	\item $\text{rank}(\mathbf{AB}) = \text{min}(\text{rank}(\mathbf{A}),\text{rank}(\mathbf{B}))$
+	\item $\text{rank}(\mathbf{A}+\mathbf{B}) = \text{rank}(A) + \text{rank}(B)$
+	\item $\text{rank}(\mathbf{A}) = \text{number of non-zero eigenvalues of }\mathbf{A}$.
+\end{itemize}
+
 	\section{Singular Matrix}
 	\label{term:singular_matrix}\index{Singular Matrix}
 The square matrix which is not \hyperref[term:rank_of_a_matrix]{full rank}, is called a singular matrix. That is, one or more rows and/or columns of the matrix are \hyperref[term:linearly_independent_vectors]{linearly dependent}. A singular matrix is not invertible. Only the non-singular matrices are invertible.
@@ -502,6 +510,14 @@ Ans: Let's apply Gaussian Elimination to find the determinant.
 
 Since, the echelon form is an upper triangular matrix, then the determinant is given by $1\times (-2)\times \frac{17}{2} = -17$.
 
+Here are some properties of determinant operations:
+\begin{itemize}
+\item If $\mathbf{A}$ is a square matrix, then $det(\mathbf{A}^T) = det(\mathbf{A})$
+\item $det(k\mathbf{A}) = k^ndet(\mathbf{A})$, for $\mathbf{A}$ is a square matrix and $k$ is a scalar.
+\item $det(\mathbf{AB}) = det(\mathbf{A})det(\mathbf{B})$, for two square matrices $\mathbf{A}, \mathbf{B}$ of the same dimension.
+\item A square matrix $\mathbf{A}$ is invertible, i.e., is non-singular if and only if $det(\mathbf{A}) \neq 0$. However, if any row or column of the matrix $\mathbf{A}$ is all zeros, or any two or more rows or columns of $\mathbf{A}$ are all equal, or multiple of each other, then $det(\mathbf{A}) = 0$.
+\item $det(\mathbf{A}) = \prod_{i=1}^n\lambda_i = \lambda_1\lambda_2\cdots\lambda_n$, where $\lambda_i$ is the $i^\text{th}$ eigenvalue of the matrix $\mathbf{A}$.
+\end{itemize}
 
 \subsection{Computing rank of matrix}
 \label{term:gauss_jordan_elimination_algorithm_compute_rank}\index{Rank of matrix}
@@ -1345,6 +1361,7 @@ So, we can compute the directional derivative by
 \nonumber &=& \frac{48}{5} + \frac{27}{5} = \frac{75}{5} = 15 = ||\nabla f(3,2)|| = ||12\hat{i}+9\hat{j}|| =  \sqrt{12^2+9^2} = 15
 \end{eqnarray}
 \subsection{Directional Derivatives: Vectors}
+Here are the steps to compute directional derivatives of vectors \cite{pres:withoutATrace}:
 \begin{itemize}
 	\item Step 1: Pick an arbitrary unit length $\vec u$: $\vec u^T\vec u = 1$
 	\item Step 2: Setup the standard directional derivative definition (as in Equation \ref{eqn:directional_derivative_definition_1})
@@ -1353,6 +1370,7 @@ So, we can compute the directional derivative by
 	Then, for an arbitrary place $i$, in an arbitrary direction $\langle \vec u\rangle_i$: $D_{\vec u_{(i)}}f(\vec x) = \vec u^T \vec z$ reduces to just $D_{\vec u_{(i)}}f(\vec x) = \vec z_i$, where $z_i$ is the partial derivative in the $i^\text{th}$ place. So, $\vec z$ would be the directional derivative of the given function.
 \end{itemize}
 \subsection{Directional Derivatives: Matrices}
+Here are the steps to compute directional derivatives of matrices\cite{pres:withoutATrace}:
 \begin{itemize}
 	\item Step 1: $\mathbf{U}=(i,j)$ be a Matrix such that $u_{ij}=1$ in $\langle \mathbf{U}_{ij}\rangle$, and 0 otherwise.
 	\item Step 2: We extend the idea of directional derivative definition (Equation \ref{eqn:directional_derivative_definition_1}) to matrices:

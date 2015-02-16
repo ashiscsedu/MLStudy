@@ -102,4 +102,11 @@ C.~Ding, D.~Zhou, X.~He, and H.~Zha, ``R 1-pca: rotational invariant l 1-norm
   \url{http://mathinsight.org/directional_derivative_gradient_examples}
 \BIBentrySTDinterwordspacing
 
+\bibitem{pres:withoutATrace}
+\BIBentryALTinterwordspacing
+(2012, May) With(out) a trace, matrix derivatives the easy way. [Online].
+  Available:
+  \url{http://www.tc.umn.edu/~nydic001/docs/unpubs/Schonemann_Trace_Derivatives_Presentation.pdf}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

@@ -1,6 +1,6 @@
 \begin{theindex}
 
-  \item $L_1$-norm, \hyperpage{16}
+  \item $L_1$-norm, \hyperpage{17}
   \item $L_{2,1}$ norm, \hyperpage{17}
   \item \emph{p}-norm, \hyperpage{16}
 
@@ -19,7 +19,7 @@
   \indexspace
 
   \item Echelon Form, \hyperpage{6}
-  \item Eigenvalues and Eigenvectors, \hyperpage{13}
+  \item Eigenvalues and Eigenvectors, \hyperpage{14}
   \item Euclidean norm, \hyperpage{16, 17}
 
   \indexspace
@@ -41,7 +41,7 @@
   \item Idempotent Matrix, \hyperpage{3}
   \item Identity Matrix, \hyperpage{3}
   \item Infinity norm, \hyperpage{17}
-  \item Inverse of Matrix, \hyperpage{9, 10}
+  \item Inverse of Matrix, \hyperpage{10}
 
   \indexspace
 
@@ -76,7 +76,7 @@
   \indexspace
 
   \item Schur product, \hyperpage{31}
-  \item Singular Matrix, \hyperpage{2}
+  \item Singular Matrix, \hyperpage{3}
   \item Solving system of linear equations, \hyperpage{7}, 
 		\hyperpage{11}
   \item System of Linear Equations, \hyperpage{11}
