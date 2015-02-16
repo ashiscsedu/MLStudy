@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.5)  14 FEB 2015 12:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.19)  16 FEB 2015 00:49
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  %&-line parsing enabled.
 **MLPrimer--using-R.tex
 (./MLPrimer--using-R.tex
@@ -754,7 +754,7 @@ m/it/10.95 k[] \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 k[] \OT1/cmr/m/n/10.95
 /cmsy/m/n/10.95 8\OML/cmm/m/it/10.95 k[]; k[]; []  ; k[] \OMS/cmsy/m/n/10.95 2
  []
 
-<figures/basis_graph.pdf, id=202, 354.21529pt x 197.92339pt>
+<figures/basis_graph.pdf, id=211, 354.21529pt x 197.92339pt>
 File: figures/basis_graph.pdf Graphic file (type pdf)
 
 <use figures/basis_graph.pdf>
@@ -966,14 +966,14 @@ LaTeX Font Info:    Font shape `OMS/pcr/m/it' in size <11> not available
                                                   \fi \fi 
 l.1277 \end{equation}
                      ]
-<figures/derivative-1.pdf, id=338, 892.14934pt x 911.12778pt>
+<figures/derivative-1.pdf, id=346, 892.14934pt x 911.12778pt>
 File: figures/derivative-1.pdf Graphic file (type pdf)
 
 <use figures/derivative-1.pdf>
 Package pdftex.def Info: figures/derivative-1.pdf used on input line 1285.
 (pdftex.def)             Requested size: 223.03679pt x 227.78139pt.
 
-<figures/derivative-2.pdf, id=342, 892.14934pt x 934.03569pt>
+<figures/derivative-2.pdf, id=350, 892.14934pt x 934.03569pt>
 File: figures/derivative-2.pdf Graphic file (type pdf)
 
 <use figures/derivative-2.pdf>
@@ -994,7 +994,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.23.1
 l.1315 	\item
               if $f'(p) = \left.\dfrac{df}{dx}\right|_{x=p} > 0$, then $f(x)...
  <./figures/derivative-1.pdf>]
-<figures/derivative-3.pdf, id=360, 828.95892pt x 432.92386pt>
+<figures/derivative-3.pdf, id=368, 828.95892pt x 432.92386pt>
 File: figures/derivative-3.pdf Graphic file (type pdf)
 
 <use figures/derivative-3.pdf>
@@ -1026,7 +1026,7 @@ fier (name{equation.23.11}) has been already used, duplicate ignored
                    \relax 
 l.1352  \begin{eqnarray}
                         
-<figures/partial-derivative-1.pdf, id=381, 982.81718pt x 513.22331pt>
+<figures/partial-derivative-1.pdf, id=389, 982.81718pt x 513.22331pt>
 File: figures/partial-derivative-1.pdf Graphic file (type pdf)
 
 <use figures/partial-derivative-1.pdf>
@@ -1038,7 +1038,7 @@ LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <11> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1386.
 
  [21 <./figures/partial-derivative-1.pdf>] <figure/minimal-Plot-surface-1-1.pdf
-, id=391, 505.89pt x 505.89pt>
+, id=399, 505.89pt x 505.89pt>
 File: figure/minimal-Plot-surface-1-1.pdf Graphic file (type pdf)
 
 <use figure/minimal-Plot-surface-1-1.pdf>
@@ -1052,7 +1052,7 @@ Overfull \hbox (18.59926pt too wide) in paragraph at lines 1433--1433
 cting plane with holding y=1"[][])[][] 
  []
 
-<figure/minimal-Plot-surface-2-1.pdf, id=402, 505.89pt x 505.89pt>
+<figure/minimal-Plot-surface-2-1.pdf, id=410, 505.89pt x 505.89pt>
 File: figure/minimal-Plot-surface-2-1.pdf Graphic file (type pdf)
 
 <use figure/minimal-Plot-surface-2-1.pdf>
@@ -1092,7 +1092,7 @@ Overfull \vbox (0.33682pt too high) detected at line 1472
  []
 
 [23 <./figure/minimal-Plot-surface-2-1.pdf>]
-<figure/minimal-Plot-surface-3-1.pdf, id=414, 505.89pt x 505.89pt>
+<figure/minimal-Plot-surface-3-1.pdf, id=422, 505.89pt x 505.89pt>
 File: figure/minimal-Plot-surface-3-1.pdf Graphic file (type pdf)
 
 <use figure/minimal-Plot-surface-3-1.pdf>
@@ -1100,7 +1100,7 @@ Package pdftex.def Info: figure/minimal-Plot-surface-3-1.pdf used on input line
  1474.
 (pdftex.def)             Requested size: 216.81pt x 216.81056pt.
 
-<figures/directional-derivative-1.pdf, id=417, 827.09pt x 868.21507pt>
+<figures/directional-derivative-1.pdf, id=425, 827.09pt x 868.21507pt>
 File: figures/directional-derivative-1.pdf Graphic file (type pdf)
 
 <use figures/directional-derivative-1.pdf>
@@ -1111,221 +1111,215 @@ e 1495.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[24 <./figure/minimal-Plot-surface-3-1.pdf>]pdfTeX warning (ext4): destination 
-with the same identifier (name{equation.25.11}) has been already used, duplicat
-e ignored
-<to be read again> 
-                   \relax 
-l.1508 \begin{eqnarray}
-                       pdfTeX warning (ext4): destination with the same identif
-ier (name{equation.25.11}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1508 \begin{eqnarray}
-                       pdfTeX warning (ext4): destination with the same identif
-ier (name{equation.25.11}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1508 \begin{eqnarray}
-                       pdfTeX warning (ext4): destination with the same identif
-ier (name{equation.25.11}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1508 \begin{eqnarray}
-                        [25 <./figures/directional-derivative-1.pdf>] [26pdfTeX
- warning (ext4): destination with the same identifier (name{equation.25.12}) ha
-s been already used, duplicate ignored
+[24 <./figure/minimal-Plot-surface-3-1.pdf>] [25 <./figures/directional-derivat
+ive-1.pdf>] [26pdfTeX warning (ext4): destination with the same identifier (nam
+e{equation.25.13}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1566 S
         o, using the relationship among directional derivative and the gradi...
 pdfTeX warning (ext4): destination with the same identifier (name{equation.25.1
-2}) has been already used, duplicate ignored
+3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1566 S
         o, using the relationship among directional derivative and the gradi...
 ]pdfTeX warning (ext4): destination with the same identifier (name{equation.25.
-12}) has been already used, duplicate ignored
+13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1567 \begin{eqnarray}
                        pdfTeX warning (ext4): destination with the same identif
-ier (name{equation.25.12}) has been already used, duplicate ignored
+ier (name{equation.25.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1567 \begin{eqnarray}
                        pdfTeX warning (ext4): destination with the same identif
-ier (name{equation.25.12}) has been already used, duplicate ignored
+ier (name{equation.25.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1567 \begin{eqnarray}
                        pdfTeX warning (ext4): destination with the same identif
-ier (name{equation.25.12}) has been already used, duplicate ignored
+ier (name{equation.25.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1567 \begin{eqnarray}
                        pdfTeX warning (ext4): destination with the same identif
-ier (name{equation.25.12}) has been already used, duplicate ignored
+ier (name{equation.25.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1578 \begin{eqnarray}
                        pdfTeX warning (ext4): destination with the same identif
-ier (name{equation.25.12}) has been already used, duplicate ignored
+ier (name{equation.25.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1578 \begin{eqnarray}
                        pdfTeX warning (ext4): destination with the same identif
-ier (name{equation.25.12}) has been already used, duplicate ignored
+ier (name{equation.25.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1578 \begin{eqnarray}
                        pdfTeX warning (ext4): destination with the same identif
-ier (name{equation.25.12}) has been already used, duplicate ignored
+ier (name{equation.25.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1578 \begin{eqnarray}
                        pdfTeX warning (ext4): destination with the same identif
-ier (name{equation.25.12}) has been already used, duplicate ignored
+ier (name{equation.25.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1589 \begin{eqnarray}
                        pdfTeX warning (ext4): destination with the same identif
-ier (name{equation.25.12}) has been already used, duplicate ignored
+ier (name{equation.25.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1589 \begin{eqnarray}
                        pdfTeX warning (ext4): destination with the same identif
-ier (name{equation.25.12}) has been already used, duplicate ignored
+ier (name{equation.25.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1589 \begin{eqnarray}
                        pdfTeX warning (ext4): destination with the same identif
-ier (name{equation.25.12}) has been already used, duplicate ignored
+ier (name{equation.25.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1589 \begin{eqnarray}
-                        [27] [28pdfTeX warning (ext4): destination with the sam
-e identifier (name{equation.26.12}) has been already used, duplicate ignored
+                        [27]pdfTeX warning (ext4): destination with the same id
+entifier (name{equation.25.13}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1618 \begin{eqnarray}
+                       pdfTeX warning (ext4): destination with the same identif
+ier (name{equation.25.13}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1618 \begin{eqnarray}
+                       pdfTeX warning (ext4): destination with the same identif
+ier (name{equation.25.13}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1618 \begin{eqnarray}
+                       pdfTeX warning (ext4): destination with the same identif
+ier (name{equation.25.13}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1618 \begin{eqnarray}
+                       pdfTeX warning (ext4): destination with the same identif
+ier (name{equation.25.13}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1634 Solution: \begin{eqnarray}
+                                 pdfTeX warning (ext4): destination with the sa
+me identifier (name{equation.25.13}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1634 Solution: \begin{eqnarray}
+                                 pdfTeX warning (ext4): destination with the sa
+me identifier (name{equation.25.13}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1634 Solution: \begin{eqnarray}
+                                 pdfTeX warning (ext4): destination with the sa
+me identifier (name{equation.25.13}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1634 Solution: \begin{eqnarray}
+                                  [28] [29pdfTeX warning (ext4): destination wi
+th the same identifier (name{equation.26.13}) has been already used, duplicate 
+ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1664 \end{eqnarray}
+l.1680 \end{eqnarray}
+                     ] [30pdfTeX warning (ext4): destination with the same iden
+tifier (name{equation.27.13}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1737 \end{eqnarray}
                      pdfTeX warning (ext4): destination with the same identifie
-r (name{equation.27.12}) has been already used, duplicate ignored
+r (name{equation.28.13}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1664 \end{eqnarray}
-                     ]pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.28.12}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1666 \begin{eqnarray}
-                       pdfTeX warning (ext4): destination with the same identif
-ier (name{equation.28.12}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1666 \begin{eqnarray}
-                       pdfTeX warning (ext4): destination with the same identif
-ier (name{equation.28.12}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1666 \begin{eqnarray}
-                       pdfTeX warning (ext4): destination with the same identif
-ier (name{equation.28.12}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1666 \begin{eqnarray}
-                       pdfTeX warning (ext4): destination with the same identif
-ier (name{equation.28.12}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1674 \begin{eqnarray}
-                       pdfTeX warning (ext4): destination with the same identif
-ier (name{equation.28.12}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1674 \begin{eqnarray}
-                       pdfTeX warning (ext4): destination with the same identif
-ier (name{equation.28.12}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1674 \begin{eqnarray}
-                       pdfTeX warning (ext4): destination with the same identif
-ier (name{equation.28.12}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1674 \begin{eqnarray}
-                        [29pdfTeX warning (ext4): destination with the same ide
-ntifier (name{equation.28.12}) has been already used, duplicate ignored
+l.1737 \end{eqnarray}
+                     pdfTeX warning (ext4): destination with the same identifie
+r (name{equation.28.13}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1733 \]
-         ] (./MLPrimer--using-R.bbl (./MLPrimer--using-R.brf)
+l.1737 \end{eqnarray}
+                     ] [31pdfTeX warning (ext4): destination with the same iden
+tifier (name{equation.28.13}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1800 	\item I
+               f $\mathbf{A}$ is a square $n\times n$ matrix with real or co...
+] (./MLPrimer--using-R.bbl (./MLPrimer--using-R.brf)
 \tf@brf=\write5
 \openout5 = `MLPrimer--using-R.brf'.
 
-) [30]
+) [32]
 (./MLPrimer--using-R.ind)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1755.
- [31]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1755.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1810.
+ [33]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1810.
  (./MLPrimer--using-R.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1755.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1755.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1810.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1810.
 
 Package rerunfilecheck Info: File `MLPrimer--using-R.out' has not changed.
-(rerunfilecheck)             Checksum: 664D5488F6B38BFBAB41DBB1DB28BE58;2663.
+(rerunfilecheck)             Checksum: B329133E117AFAF5008A75A8D87F8453;2832.
 Package rerunfilecheck Info: File `MLPrimer--using-R.brf' has not changed.
-(rerunfilecheck)             Checksum: CD34C61AAFE1A64C7F880F55D4BB8339;881.
+(rerunfilecheck)             Checksum: 4E30F6FA69C572E27E1708FFE4F49545;881.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 2.25pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1755.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1810.
  ) 
 Here is how much of TeX's memory you used:
- 11127 strings out of 493304
- 170133 string characters out of 6139872
- 290433 words of memory out of 5000000
- 14239 multiletter control sequences out of 15000+600000
+ 11135 strings out of 493304
+ 170266 string characters out of 6139871
+ 290601 words of memory out of 5000000
+ 14242 multiletter control sequences out of 15000+600000
  48676 words of font info for 115 fonts, out of 8000000 for 9000
  960 hyphenation exceptions out of 8191
  40i,20n,40p,1662b,433s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/latxfont/line10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier
-/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
-i8a.pfb>
-Output written on MLPrimer--using-R.pdf (31 pages, 870918 bytes).
+f-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/l
+atxfont/line10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/s
+ymbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrb8a
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/font
+s/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
+mes/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
+>
+Output written on MLPrimer--using-R.pdf (33 pages, 884920 bytes).
 PDF statistics:
- 669 PDF objects out of 1000 (max. 8388607)
- 588 compressed objects within 6 object streams
- 122 named destinations out of 1000 (max. 500000)
- 398 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 694 PDF objects out of 1000 (max. 8388607)
+ 609 compressed objects within 7 object streams
+ 127 named destinations out of 1000 (max. 500000)
+ 414 words of extra memory for PDF output out of 10000 (max. 10000000)
 

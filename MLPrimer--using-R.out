@@ -35,10 +35,12 @@
 \BOOKMARK [1][-]{section.23}{Derivative}{}% 35
 \BOOKMARK [1][-]{section.24}{Partial Derivative}{}% 36
 \BOOKMARK [1][-]{section.25}{Directional Derivative}{}% 37
-\BOOKMARK [1][-]{section.26}{Gradient as a derivative}{}% 38
-\BOOKMARK [1][-]{section.27}{Jacobian as a derivative}{}% 39
-\BOOKMARK [1][-]{section.28}{Hessian as a derivative}{}% 40
-\BOOKMARK [1][-]{section.29}{Hadamard Product}{}% 41
-\BOOKMARK [1][-]{section.30}{Kronecker Product}{}% 42
-\BOOKMARK [1][-]{section.31}{Trace of a Matrix}{}% 43
-\BOOKMARK [1][-]{section*.1}{References}{}% 44
+\BOOKMARK [2][-]{subsection.25.1}{Directional Derivatives: Vectors}{section.25}% 38
+\BOOKMARK [2][-]{subsection.25.2}{Directional Derivatives: Matrices}{section.25}% 39
+\BOOKMARK [1][-]{section.26}{Gradient as a derivative}{}% 40
+\BOOKMARK [1][-]{section.27}{Jacobian as a derivative}{}% 41
+\BOOKMARK [1][-]{section.28}{Hessian as a derivative}{}% 42
+\BOOKMARK [1][-]{section.29}{Hadamard Product}{}% 43
+\BOOKMARK [1][-]{section.30}{Kronecker Product}{}% 44
+\BOOKMARK [1][-]{section.31}{Trace of a Matrix}{}% 45
+\BOOKMARK [1][-]{section*.1}{References}{}% 46

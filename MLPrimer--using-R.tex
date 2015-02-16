@@ -1487,7 +1487,7 @@ The partial derivatives of $f$ will give the slope $\frac{\partial f}{\partial x
 	
 The first step in taking a directional derivative, is to specify the direction. One way to do this is with a vector $\vec u=(u_1,u_2)$ that points in the direction in which we want to compute the slope. For simplicity, we will insist that $\vec u$ is a unit vector. We write the directional derivative $f$ in the direction $\vec u$ at the point $\vec a$ as $D_{\vec u}f(\vec a)$. We could define it with a limit definition just as the ordinary derivative:
 \begin{eqnarray}
-\nonumber D_{\vec u}f(\vec a) = \lim_{h\rightarrow 0}\dfrac{f(\vec a+h\vec u)-f(\vec a)}{h}
+D_{\vec u}f(\vec a) = \lim_{h\rightarrow 0}\dfrac{f(\vec a+h\vec u)-f(\vec a)}{h}\label{eqn:directional_derivative_definition_1}
 \end{eqnarray}
 $D_{\vec u}f(\vec a)$ is the slope of $f(\vec x)$ when standing at the point $\vec a$ and facing the direction given by $\vec u$. $D_{\vec u}f(\vec a)$ is a number. In fact, the directional derivative is the same as a partial derive if $\vec u$ points in the positive $x$ direction (or positive $y$ direction). For example, if $\vec u=(1,0)$, then $D_{\vec u}f(\vec a) = \frac{\partial f}{\partial x}(\vec a)$. Similarly if $\vec u=(0,1)$, then $D_{\vec u}f(\vec a) = \frac{\partial f}{\partial y}(\vec a)$
 \begin{figure}[!h]
@@ -1591,6 +1591,61 @@ So, we can compute the directional derivative by
 \nonumber &=& (12\hat{i}+9\hat{j})\cdot (\frac{4}{5}\hat{i} + \frac{3}{5}\hat{j})\\
 \nonumber &=& \frac{48}{5} + \frac{27}{5} = \frac{75}{5} = 15 = ||\nabla f(3,2)|| = ||12\hat{i}+9\hat{j}|| =  \sqrt{12^2+9^2} = 15
 \end{eqnarray}
+\subsection{Directional Derivatives: Vectors}
+\begin{itemize}
+	\item Step 1: Pick an arbitrary unit length $\vec u$: $\vec u^T\vec u = 1$
+	\item Step 2: Setup the standard directional derivative definition (as in Equation \ref{eqn:directional_derivative_definition_1})
+	\item Step 3: If we can find a $\vec z$, such that:
+	\[ D_{\vec u}f(\vec x) = \lim_{h\rightarrow 0}\dfrac{f(\vec x+h\vec u)-f(\vec x)}{h} = \vec u^T \vec z \]
+	Then, for an arbitrary place $i$, in an arbitrary direction $\langle \vec u\rangle_i$: $D_{\vec u_{(i)}}f(\vec x) = \vec u^T \vec z$ reduces to just $D_{\vec u_{(i)}}f(\vec x) = \vec z_i$, where $z_i$ is the partial derivative in the $i^\text{th}$ place. So, $\vec z$ would be the directional derivative of the given function.
+\end{itemize}
+\subsection{Directional Derivatives: Matrices}
+\begin{itemize}
+	\item Step 1: $\mathbf{U}=(i,j)$ be a Matrix such that $u_{ij}=1$ in $\langle \mathbf{U}_{ij}\rangle$, and 0 otherwise.
+	\item Step 2: We extend the idea of directional derivative definition (Equation \ref{eqn:directional_derivative_definition_1}) to matrices:
+	\[ D_{\mathbf{U}}f(\mathbf{X}) = \lim_{h\rightarrow 0}\dfrac{f(\mathbf{X}+h\mathbf{U})-f(\mathbf{X})}{h}\]
+	here, we can conclude that
+	\[ D_{\mathbf{U}_{(ij)}}f(\mathbf{X}) = \lim_{h\rightarrow 0}\dfrac{f(\mathbf{X}+h\mathbf{U}_{(ij)})-f(\mathbf{X})}{h}\]
+	will ``pick off'' the partial derivative in the $(i,j)^\text{th}$ place.
+	\item Step 3: If we can find a $\mathbf{Z}$, such that:
+	\[ D_{\mathbf{U}}f(\mathbf{X}) = \lim_{h\rightarrow 0}\dfrac{f(\mathbf{X}+h\mathbf{U})-f(\mathbf{X})}{h} = \text{tr}(\mathbf{U}^T\mathbf{Z})\]
+	then, for an arbitrary place $(i,j)$, in an arbitrary direction $\langle \mathbf{U}\rangle_{ij}$ \[ D_{\mathbf{U}_{(ij)}}f(\mathbf{X}) =  \text{tr}(\mathbf{U}^T_{(ij)}\mathbf{Z}) = \sum_j\sum_i(u_{ij}z_{ij}) = z_{ij}\]
+	so, $\mathbf{Z}$ would be the directional derivative of the given function.
+\end{itemize}
+Example 1: Given a function $f(\mathbf{X}) = \text{tr}(AX)$, find $\dfrac{\partial f(\mathbf{X})}{\partial X} = \dfrac{\partial \text{tr}(\mathbf{AX})}{\partial X}$.
+
+Solution: we begin here:
+\begin{eqnarray}
+\nonumber D_\mathbf{U}f(\mathbf{X}) &=& \lim_{h\rightarrow 0}\dfrac{f(\mathbf{X}+h\mathbf{U})-f(\mathbf{X})}{h}\\
+\nonumber &=& \lim_{h\rightarrow 0}\dfrac{\text{tr}(\mathbf{A}(\mathbf{X}+h\mathbf{U}))-\text{tr}(\mathbf{AX})}{h}\\
+\nonumber &=& \lim_{h\rightarrow 0}\dfrac{\text{tr}(\mathbf{A}\mathbf{X}+\mathbf{A}h\mathbf{U})-\text{tr}(\mathbf{AX})}{h}\\
+\nonumber &=& \lim_{h\rightarrow 0}\dfrac{\cancel{\text{tr}(\mathbf{A}\mathbf{X})}+\text{tr}(\mathbf{A}h\mathbf{U})-\cancel{\text{tr}(\mathbf{AX})}}{h}\\
+\nonumber &=& \lim_{h\rightarrow 0}\dfrac{\text{tr}(h\mathbf{A}\mathbf{U})}{h}\\
+\nonumber &=& \lim_{h\rightarrow 0}\dfrac{\cancel{h}\text{tr}(\mathbf{A}\mathbf{U})}{\cancel{h}}\\
+\nonumber &=& \lim_{h\rightarrow 0}\text{tr}(\mathbf{AU})\\
+\nonumber &=& \text{tr}(\mathbf{AU})\\
+\nonumber &=& \text{tr}((\mathbf{AU})^T)\\
+\nonumber &=& \text{tr}(\mathbf{U}^T\mathbf{A}^T)
+\end{eqnarray}
+So, $\dfrac{\partial \text{tr}(\mathbf{AX})}{\partial X} = \mathbf{A}^T$.
+
+Example 2: find derivative of $f(\mathbf{W})=\text{tr}(\mathbf{W}^T\mathbf{A}\mathbf{W})$ with respect to $\mathbf{W}$.
+
+Solution: \begin{eqnarray}
+\nonumber D_\mathbf{U}f(\mathbf{W}) &=& \lim_{h\rightarrow 0}\dfrac{f(\mathbf{W}+h\mathbf{U})-f(\mathbf{W})}{h}\\
+\nonumber &=& \lim_{h\rightarrow 0} \dfrac{\text{tr}((\mathbf{W}+h\mathbf{U})^T\mathbf{A}(\mathbf{W}+h\mathbf{U}))-\text{tr}(\mathbf{W}^T\mathbf{A}\mathbf{W})}{h}\\
+\nonumber &=& \lim_{h\rightarrow 0} \dfrac{\text{tr}((\mathbf{W}+h\mathbf{U})^T(\mathbf{A}\mathbf{W}+h\mathbf{A}\mathbf{U}))-\text{tr}(\mathbf{W}^T\mathbf{A}\mathbf{W})}{h}\\
+\nonumber &=& \lim_{h\rightarrow 0} \dfrac{\text{tr}(\mathbf{W}^TA\mathbf{W}+h\mathbf{U}^T\mathbf{AW}+h\mathbf{W}^T\mathbf{AU}+h^2\mathbf{U}^T\mathbf{AU})-\text{tr}(\mathbf{W}^T\mathbf{A}\mathbf{W})}{h}\\
+\nonumber &=& \lim_{h\rightarrow 0} \dfrac{\cancel{\text{tr}(\mathbf{W}^TA\mathbf{W})}+h\text{tr}(\mathbf{U}^T\mathbf{AW})+h\text{tr}(\mathbf{W}^T\mathbf{AU})+h^2\text{tr}(\mathbf{U}^T\mathbf{AU})-\cancel{\text{tr}(\mathbf{W}^T\mathbf{A}\mathbf{W})}}{h}\\
+\nonumber &=& \lim_{h\rightarrow 0} \dfrac{h\text{tr}(\mathbf{U}^T\mathbf{AW})+h\text{tr}(\mathbf{W}^T\mathbf{AU})+h^2\text{tr}(\mathbf{U}^T\mathbf{AU})}{h}\\
+\nonumber &=& \lim_{h\rightarrow 0} \text{tr}(\mathbf{U}^T\mathbf{AW})+\text{tr}(\mathbf{W}^T\mathbf{AU})+h\text{tr}(\mathbf{U}^T\mathbf{AU})\\
+\nonumber &=& \text{tr}(\mathbf{U}^T\mathbf{AW})+\text{tr}(\mathbf{W}^T\mathbf{AU})+0\\
+\nonumber &=& \text{tr}(\mathbf{U}^T\mathbf{AW})+\text{tr}((\mathbf{W}^T\mathbf{AU})^T)\\
+\nonumber &=& \text{tr}(\mathbf{U}^T\mathbf{AW})+\text{tr}(\mathbf{U}^T\mathbf{A}^T\mathbf{W})\\
+\nonumber &=& \text{tr}(\mathbf{U}^T\mathbf{AW})+\mathbf{U}^T\mathbf{A}^T\mathbf{W})\\
+\nonumber &=& \text{tr}(\mathbf{U}^T(\mathbf{AW}+\mathbf{A}^T\mathbf{W}))
+\end{eqnarray}
+So, $\dfrac{\partial \text{tr}(\mathbf{W}^T\mathbf{A}\mathbf{W})}{\partial \mathbf{W}} =  \mathbf{AW}+\mathbf{A}^T\mathbf{W} = (\mathbf{A}+\mathbf{A}^T)\mathbf{W}$
 
 \section{Gradient as a derivative}
 \label{term:Gradient_as_a_derivative}\index{Gradient}

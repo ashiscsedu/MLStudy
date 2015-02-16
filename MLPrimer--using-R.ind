@@ -29,12 +29,12 @@
   \indexspace
 
   \item Gauss-Jordan Elimination Algorithm, \hyperpage{6}
-  \item Gradient, \hyperpage{27}
+  \item Gradient, \hyperpage{29}
 
   \indexspace
 
-  \item Hadamard Product, \hyperpage{29, 30}
-  \item Hessian, \hyperpage{28}
+  \item Hadamard Product, \hyperpage{31, 32}
+  \item Hessian, \hyperpage{30}
 
   \indexspace
 
@@ -45,11 +45,11 @@
 
   \indexspace
 
-  \item Jacobian, \hyperpage{28}
+  \item Jacobian, \hyperpage{30}
 
   \indexspace
 
-  \item Kronecker Product, \hyperpage{29}
+  \item Kronecker Product, \hyperpage{31}
 
   \indexspace
 
@@ -75,7 +75,7 @@
 
   \indexspace
 
-  \item Schur product, \hyperpage{29}
+  \item Schur product, \hyperpage{31}
   \item Singular Matrix, \hyperpage{2}
   \item Solving system of linear equations, \hyperpage{7}, 
 		\hyperpage{11}
@@ -83,7 +83,7 @@
 
   \indexspace
 
-  \item Trace of Matrix, \hyperpage{30}
+  \item Trace of Matrix, \hyperpage{31}
   \item Transpose of Matrix, \hyperpage{13}
   \item Triangular Matrix, \hyperpage{5}
 
