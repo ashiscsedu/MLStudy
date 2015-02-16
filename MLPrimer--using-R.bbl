@@ -109,4 +109,12 @@ C.~Ding, D.~Zhou, X.~He, and H.~Zha, ``R 1-pca: rotational invariant l 1-norm
   \url{http://www.tc.umn.edu/~nydic001/docs/unpubs/Schonemann_Trace_Derivatives_Presentation.pdf}
 \BIBentrySTDinterwordspacing
 
+\bibitem{minka2000old}
+T.~P. Minka, ``Old and new matrix algebra useful for statistics,'' \emph{See
+  www. stat. cmu. edu/minka/papers/matrix. html}, 2000.
+
+\bibitem{petersen2008matrix}
+K.~B. Petersen, M.~S. Pedersen \emph{et~al.}, ``The matrix cookbook,''
+  \emph{Technical University of Denmark}, vol. 450, pp. 7--15, 2008.
+
 \end{thebibliography}

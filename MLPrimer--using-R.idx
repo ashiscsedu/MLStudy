@@ -19,31 +19,44 @@
 \indexentry{Inverse of Matrix|hyperpage}{10}
 \indexentry{System of Linear Equations|hyperpage}{11}
 \indexentry{Solving system of linear equations|hyperpage}{11}
+\indexentry{Inner Product|hyperpage}{12}
+\indexentry{Scalar Product|hyperpage}{12}
 \indexentry{Dot product|hyperpage}{12}
+\indexentry{Outer Product|hyperpage}{13}
+\indexentry{Matrix Product|hyperpage}{13}
+\indexentry{Dyadic product|hyperpage}{13}
 \indexentry{Unit vector|hyperpage}{13}
 \indexentry{Matrix Product|hyperpage}{13}
-\indexentry{Transpose of Matrix|hyperpage}{13}
+\indexentry{Transpose of Matrix|hyperpage}{14}
 \indexentry{Eigenvalues and Eigenvectors|hyperpage}{14}
 \indexentry{Norms|hyperpage}{16}
 \indexentry{Norm of vectors|hyperpage}{16}
 \indexentry{Euclidean norm|hyperpage}{16}
-\indexentry{Manhattan norm|hyperpage}{16}
-\indexentry{\emph{p}-norm|hyperpage}{16}
-\indexentry{Maximum norm|hyperpage}{16}
-\indexentry{Norms|hyperpage}{16}
-\indexentry{Matrix norms|hyperpage}{16}
+\indexentry{Manhattan norm|hyperpage}{17}
+\indexentry{\emph{p}-norm|hyperpage}{17}
+\indexentry{Maximum norm|hyperpage}{17}
+\indexentry{Norms|hyperpage}{17}
+\indexentry{Matrix norms|hyperpage}{17}
 \indexentry{$L_1$-norm|hyperpage}{17}
 \indexentry{Infinity norm|hyperpage}{17}
 \indexentry{Euclidean norm|hyperpage}{17}
 \indexentry{Frobenius norm|hyperpage}{17}
-\indexentry{$L_{2,1}$ norm|hyperpage}{17}
+\indexentry{$L_{2,1}$ norm|hyperpage}{18}
 \indexentry{Derivative|hyperpage}{18}
-\indexentry{Directional Derivative|hyperpage}{24}
-\indexentry{Gradient|hyperpage}{29}
+\indexentry{Directional Derivative|hyperpage}{25}
+\indexentry{Gradient|hyperpage}{30}
 \indexentry{Jacobian|hyperpage}{30}
-\indexentry{Hessian|hyperpage}{30}
+\indexentry{Hessian|hyperpage}{31}
 \indexentry{Hadamard Product|hyperpage}{31}
 \indexentry{Schur product|hyperpage}{31}
-\indexentry{Kronecker Product|hyperpage}{31}
-\indexentry{Trace of Matrix|hyperpage}{31}
-\indexentry{Hadamard Product|hyperpage}{32}
+\indexentry{Kronecker Product|hyperpage}{32}
+\indexentry{Vec operator|hyperpage}{32}
+\indexentry{Trace of Matrix|hyperpage}{32}
+\indexentry{Hadamard Product|hyperpage}{33}
+\indexentry{Singular Value Decomposition|hyperpage}{33}
+\indexentry{SVD|hyperpage}{33}
+\indexentry{Positive Definite Matrices|hyperpage}{33}
+\indexentry{Positive Semi-definite Matrices|hyperpage}{33}
+\indexentry{Lagrange Multipliers|hyperpage}{34}
+\indexentry{KKT Conditions|hyperpage}{34}
+\indexentry{Karush-Kuhn-Tucker Conditions|hyperpage}{34}

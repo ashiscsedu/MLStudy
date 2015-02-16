@@ -18,29 +18,35 @@
 \BOOKMARK [1][-]{section.14}{Inverse of Matrix}{}% 18
 \BOOKMARK [1][-]{section.15}{System of Linear Equations}{}% 19
 \BOOKMARK [1][-]{section.16}{Dot Product of two vectors}{}% 20
-\BOOKMARK [1][-]{section.17}{Unit vector}{}% 21
-\BOOKMARK [1][-]{section.18}{Matrix Product}{}% 22
-\BOOKMARK [1][-]{section.19}{Transpose of a Matrix}{}% 23
-\BOOKMARK [1][-]{section.20}{Eigenvalues and Eigenvectors}{}% 24
-\BOOKMARK [1][-]{section.21}{Norm of vectors}{}% 25
-\BOOKMARK [2][-]{subsection.21.1}{Euclidean norm of a vector}{section.21}% 26
-\BOOKMARK [2][-]{subsection.21.2}{Manhattan norm of a vector}{section.21}% 27
-\BOOKMARK [2][-]{subsection.21.3}{p-Norm of a vector}{section.21}% 28
-\BOOKMARK [2][-]{subsection.21.4}{Maximum Norm of a vector}{section.21}% 29
-\BOOKMARK [1][-]{section.22}{Norm of Matrices}{}% 30
-\BOOKMARK [2][-]{subsection.22.1}{L1-norm of a matrix}{section.22}% 31
-\BOOKMARK [2][-]{subsection.22.2}{Inifinity-norm of a matrix}{section.22}% 32
-\BOOKMARK [2][-]{subsection.22.3}{Euclidean-norm of a matrix}{section.22}% 33
-\BOOKMARK [2][-]{subsection.22.4}{L2,1-norm of a matrix}{section.22}% 34
-\BOOKMARK [1][-]{section.23}{Derivative}{}% 35
-\BOOKMARK [1][-]{section.24}{Partial Derivative}{}% 36
-\BOOKMARK [1][-]{section.25}{Directional Derivative}{}% 37
-\BOOKMARK [2][-]{subsection.25.1}{Directional Derivatives: Vectors}{section.25}% 38
-\BOOKMARK [2][-]{subsection.25.2}{Directional Derivatives: Matrices}{section.25}% 39
-\BOOKMARK [1][-]{section.26}{Gradient as a derivative}{}% 40
-\BOOKMARK [1][-]{section.27}{Jacobian as a derivative}{}% 41
-\BOOKMARK [1][-]{section.28}{Hessian as a derivative}{}% 42
-\BOOKMARK [1][-]{section.29}{Hadamard Product}{}% 43
-\BOOKMARK [1][-]{section.30}{Kronecker Product}{}% 44
-\BOOKMARK [1][-]{section.31}{Trace of a Matrix}{}% 45
-\BOOKMARK [1][-]{section*.1}{References}{}% 46
+\BOOKMARK [1][-]{section.17}{Outer Product of two vectors}{}% 21
+\BOOKMARK [1][-]{section.18}{Unit vector}{}% 22
+\BOOKMARK [1][-]{section.19}{Matrix Product}{}% 23
+\BOOKMARK [1][-]{section.20}{Transpose of a Matrix}{}% 24
+\BOOKMARK [1][-]{section.21}{Eigenvalues and Eigenvectors}{}% 25
+\BOOKMARK [1][-]{section.22}{Norm of vectors}{}% 26
+\BOOKMARK [2][-]{subsection.22.1}{Euclidean norm of a vector}{section.22}% 27
+\BOOKMARK [2][-]{subsection.22.2}{Manhattan norm of a vector}{section.22}% 28
+\BOOKMARK [2][-]{subsection.22.3}{p-Norm of a vector}{section.22}% 29
+\BOOKMARK [2][-]{subsection.22.4}{Maximum Norm of a vector}{section.22}% 30
+\BOOKMARK [1][-]{section.23}{Norm of Matrices}{}% 31
+\BOOKMARK [2][-]{subsection.23.1}{L1-norm of a matrix}{section.23}% 32
+\BOOKMARK [2][-]{subsection.23.2}{Inifinity-norm of a matrix}{section.23}% 33
+\BOOKMARK [2][-]{subsection.23.3}{Euclidean-norm of a matrix}{section.23}% 34
+\BOOKMARK [2][-]{subsection.23.4}{L2,1-norm of a matrix}{section.23}% 35
+\BOOKMARK [1][-]{section.24}{Derivative}{}% 36
+\BOOKMARK [1][-]{section.25}{Partial Derivative}{}% 37
+\BOOKMARK [1][-]{section.26}{Directional Derivative}{}% 38
+\BOOKMARK [2][-]{subsection.26.1}{Directional Derivatives: Vectors}{section.26}% 39
+\BOOKMARK [2][-]{subsection.26.2}{Directional Derivatives: Matrices}{section.26}% 40
+\BOOKMARK [1][-]{section.27}{Gradient as a derivative}{}% 41
+\BOOKMARK [1][-]{section.28}{Jacobian as a derivative}{}% 42
+\BOOKMARK [1][-]{section.29}{Hessian as a derivative}{}% 43
+\BOOKMARK [1][-]{section.30}{Hadamard Product}{}% 44
+\BOOKMARK [1][-]{section.31}{Kronecker Product}{}% 45
+\BOOKMARK [1][-]{section.32}{The vec operator}{}% 46
+\BOOKMARK [1][-]{section.33}{Trace of a Matrix}{}% 47
+\BOOKMARK [1][-]{section.34}{Singular Value Decomposition}{}% 48
+\BOOKMARK [1][-]{section.35}{Positive Definitie and Semi-definite Matrices}{}% 49
+\BOOKMARK [1][-]{section.36}{Lagrange Multipliers}{}% 50
+\BOOKMARK [1][-]{section.37}{Karush-Kuhn-Tucker \(KKT\) Conditions}{}% 51
+\BOOKMARK [1][-]{section*.1}{References}{}% 52

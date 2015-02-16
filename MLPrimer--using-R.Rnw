@@ -174,9 +174,9 @@ A set of vectors which is linearly independent and spans some vector space, form
 
 Here are some more properties of rank of matrices:
 \begin{itemize}
-	\item $\text{rank}(\mathbf{A}) = \text{rank}(\mathbf{A}^T)$, for any matrix $\mathbf{A}$.
+	\item $\text{rank}(\mathbf{A}) = \text{rank}(\mathbf{A}^T) = \text{rank}(\mathbf{A}\mathbf{A}^T) = \text{rank}(\mathbf{A}^T\mathbf{A})$, for any matrix $\mathbf{A}$.
 	\item $\text{rank}(\mathbf{AB}) = \text{min}(\text{rank}(\mathbf{A}),\text{rank}(\mathbf{B}))$
-	\item $\text{rank}(\mathbf{A}+\mathbf{B}) = \text{rank}(A) + \text{rank}(B)$
+	\item $\text{rank}(\mathbf{A}+\mathbf{B}) = \text{rank}(\mathbf{A}) + \text{rank}(\mathbf{B})$
 	\item $\text{rank}(\mathbf{A}) = \text{number of non-zero eigenvalues of }\mathbf{A}$.
 \end{itemize}
 
@@ -801,8 +801,8 @@ solution #each row is the solution to the corresponding variable
 solve(A,b) #solution
 @
  
-	\section{Dot Product of two vectors}
-	\label{term:dot_product}\index{Dot product}
+\section{Dot Product of two vectors}
+\label{term:dot_product}\index{Inner Product}\index{Scalar Product}\index{Dot product}
 It is an operation that takes two equal-length vecors and returns a scalar. It is also known as scalar product, or sometimes inner product in the context of the Euclidean space.
 
 The dot product of two vectors $\vec a=\begin{pmatrix}a_1\\a_2\\\vdots\\a_n\end{pmatrix}, \vec b=\begin{pmatrix}b_1\\b_2\\\vdots\\b_n\end{pmatrix}$ is defined as:
@@ -822,6 +822,31 @@ This co-directionality of the two vectors implies that,
 This implies:
 \[ ||\vec a|| = \sqrt{\vec a \cdot \vec a} = \sqrt{a^2_1+a^2_2+\cdots+a^2_n} \]
 This the fomula to compute the Euclidean length of a vector.
+
+So, in a nutshell the inner product of two vectors $\vec x, \vec y$ having the same dimensionality $n\times 1$ is denoted by $\vec x^T\vec y$ and yields a scalar:
+\[ \vec x^T\vec y = \sum_{i=1}^nx_iy_i = \vec y^T\vec x = \vec x \cdot \vec y\]
+
+
+\section{Outer Product of two vectors}
+\label{term:outer_product}\index{Outer Product}\index{Matrix Product}\index{Dyadic product}
+The outer product of two vectors $\vec x = \begin{pmatrix}x_1\\x_2\\\vdots\\x_m\end{pmatrix}$ $\vec y=\begin{pmatrix}y_1\\y_2\\\vdots\\y_n\end{pmatrix}$ if denoted by $\vec x\vec y^T$ yields a matrix:
+\[ 
+\vec x \vec y^T = \begin{pmatrix}x_1\\x_2\\\vdots\\x_m\end{pmatrix}\begin{pmatrix}y_1 & y_2& \cdots & y_n\end{pmatrix} = \begin{pmatrix} 
+x_1y_1 & x_1y_2&\cdots&x_1y_n\\
+x_2y_1 & x_2y_2&\cdots&x_2y_n\\
+\vdots & \vdots & \ddots & \vdots\\
+x_my_1 & x_my_2 & \cdots & x_my_n
+\end{pmatrix} = \mathbf{M}
+\]
+Again, the outer product of the same two vectors if denoted by $\vec y\vec x^T$ yields another matrix:
+\[ 
+\vec y \vec x^T = \begin{pmatrix}y_1\\y_2\\\vdots\\y_n\end{pmatrix}\begin{pmatrix}x_1 &x_2& \cdots & x_m\end{pmatrix} = \begin{pmatrix} 
+x_1y_1 & x_2y_1&\cdots&x_my_1\\
+x_1y_2 & x_2y_2&\cdots&x_my_2\\
+\vdots & \vdots & \ddots & \vdots\\
+x_1y_n & x_2y_n & \cdots & x_my_n
+\end{pmatrix} = \mathbf{M}^T
+\]
 
 	\section{Unit vector}
 	\label{term:unit_vector}\index{Unit vector}
@@ -970,7 +995,10 @@ Other properties of the eigenvalues and eigenvectors of matrix $A$ with eigenval
 \item $\text{det}(A) = \prod_{i=1}^n\lambda_i = \lambda_1\lambda_2\cdots\lambda_n$
 \item The eigenvalues of $A^k$ for any positive integer $k$ are: $\lambda^k_1, \lambda^k_2, \cdots, \lambda^k_n$.
 \item If $A$ is invertible, then the eigenvalues of $A^{-1}$ are: $\frac{1}{\lambda_1}, \frac{1}{\lambda_2}, \cdots, \frac{1}{\lambda_n}$
+\item $\text{eig}(\mathbf{AB}) = \text{eig}(\mathbf{BA})$
 \end{itemize}
+
+
 
 \section{Norm of vectors}
 \label{term:norm_of_vectors}\index{Norms}\index{Norm of vectors}
@@ -1398,7 +1426,7 @@ Solution: we begin here:
 \nonumber &=& \text{tr}((\mathbf{AU})^T)\\
 \nonumber &=& \text{tr}(\mathbf{U}^T\mathbf{A}^T)
 \end{eqnarray}
-So, $\dfrac{\partial \text{tr}(\mathbf{AX})}{\partial X} = \mathbf{A}^T$.
+So, $\dfrac{\partial \text{tr}(\mathbf{AX})}{\partial \mathbf{X}} = \mathbf{A}^T$.
 
 Example 2: find derivative of $f(\mathbf{W})=\text{tr}(\mathbf{W}^T\mathbf{A}\mathbf{W})$ with respect to $\mathbf{W}$.
 
@@ -1551,6 +1579,31 @@ cs & ct & cu & ds & dt & du\\
 cv & cw & cz & dv & dw & dz
 \end{pmatrix}
 \]
+The Kronecker product has the following properties\cite{minka2000old}\cite{petersen2008matrix}:
+\begin{itemize}
+\item $\mathbf{A}\otimes (\mathbf{B} + \mathbf{C}) = \mathbf{A}\otimes\mathbf{B} + \mathbf{A}\otimes \mathbf{C}$
+\item $\mathbf{A}\otimes \mathbf{B} \neq \mathbf{B}\otimes \mathbf{A}$
+\item $\mathbf{A}\otimes(\mathbf{B}\otimes \mathbf{C}) = (\mathbf{A}\otimes\mathbf{B})\otimes \mathbf{C}$
+\item $(k_1\mathbf{A}\otimes k_2\mathbf{B}) = k_1k_2(\mathbf{A}\otimes \mathbf{B})$
+\item $(\mathbf{A}\otimes\mathbf{B})^T = \mathbf{A}^T\otimes \mathbf{B}^T$
+\item $(\mathbf{A}\otimes\mathbf{B})(\mathbf{C}\otimes\mathbf{D}) = \mathbf{AC}\otimes\mathbf{BD}$
+\item $(\mathbf{A}\otimes\mathbf{B})^{-1} = \mathbf{A}^{-1}\otimes\mathbf{B}^{-1}$
+\item $\text{rank}(\mathbf{A}\otimes\mathbf{B}) = \text{rank}(\mathbf{A})\text{rank}(\mathbf{B})$
+\item $\text{tr}(\mathbf{A}\otimes\mathbf{B}) = \text{tr}(\mathbf{A})\text{tr}(\mathbf{B})$
+\item $\text{det}(\mathbf{A}\otimes\mathbf{B}) = \text{det}(\mathbf{A})^{\text{rank}(\mathbf{B})}\text{det}(\mathbf{B})^{\text{rank}(\mathbf{A})}$
+\end{itemize}
+
+\section{The vec operator}
+\label{term:vec_operator}\index{Vec operator}
+The vec-operator\cite{petersen2008matrix} if applied on a matrix $\mathbf{A}$ stacks the columns into a vector, i.e., for a $2\times 2$ matrix $\mathbf{A} = \begin{pmatrix}a_{11}&a_{12}\\a_{21}&a_{12}\end{pmatrix}$, the $\text{vec}(\mathbf{A})$ would return:
+\[ \text{vec}(\mathbf{A}) = \begin{pmatrix}a_{11}\\a_{21}\\a_{12}\\a_{22}\end{pmatrix}\]
+Properties of the vec-operator include (\cite{minka2000old}\cite{petersen2008matrix}):
+\begin{itemize}
+\item $\text{vec}(\mathbf{AXB}) = (\mathbf{B}^T\otimes \mathbf{A})\text{vec}(\mathbf{X})$
+\item $\text{tr}(\mathbf{A}^T\mathbf{B}) = \text{vec}(\mathbf{A})^T\text{vec}(\mathbf{B})$
+\item $\text{vec}(\mathbf{A}+\mathbf{B}) = \text{vec}(\mathbf{A}) + \text{vec}(\mathbf{B})$
+\item $\text{vec}(k\mathbf{A}) = k\text{vec}(\mathbf{A})$
+\end{itemize}
 \section{Trace of a Matrix}
 \label{term:trace_of_a_matrix}\index{Trace of Matrix}
 The trace of an $n\times n$ square matrix $A$ is defined to be the sum of elements on the main diagonal (i.e., the diagonal from the upper left to the lower right corner):
@@ -1570,6 +1623,59 @@ Here are some properties of trace:
 	\item If $\mathbf{U}, \mathbf{H}$ are two squared matrices of same dimension, and you want to multiply all the paired indices ($u_{ij}h_{ij})$ and add all the multiplications, you can use $tr({\mathbf{U}^T\mathbf{H}}) = \sum_{j=1}^n\sum_{i=1}^nu_{ij}h_{ij} = \sum_{ij}(\mathbf{U}\circ \mathbf{Y})_{ij}$ (using Hadamard product\index{Hadamard Product})
 	\item If $\mathbf{A}$ is a square $n\times n$ matrix with real or complex entries and if $\lambda_1, \cdots, \lambda_n$ are the eigenvalues of $\mathbf{A}$, then $tr(\mathbf{A}) = \sum_i\lambda_i$. This follows from the fact that $\mathbf{A}$ is always similar to its Jordan form, an upper-triangular matrix having $\lambda_1, \cdots, \lambda_n$ on their main diagonal, and trace operator would return their sum. [In contrast, the determinant of $\mathbf{A}$ is the product of its eigenvalues, i.e., $det(\mathbf{A}) = \prod_i\lambda_i$]. And more generally, $tr(\mathbf{A}^k) = \sum_i\lambda^k_i$
 \end{itemize}
+
+\section{Singular Value Decomposition}
+\label{term:singular_value_decomposition}\index{Singular Value Decomposition}\index{SVD}
+Any $n\times m$ matrix $\mathbf{A}$ can be written as
+\[ \mathbf{A} = \mathbf{U}\mathbf{D}\mathbf{V}^T \]
+where, 
+\begin{itemize}
+\item $\mathbf{U}$ = eigenvectors of $\mathbf{A}\mathbf{A}^T$, (dimension $n \times n$)
+\item $\mathbf{D}$ = $\sqrt{\text{diag}(\text{eig}(\mathbf{A}\mathbf{A}^T))}$, (function $\text{eig}(\cdot)$ returns the eigenvalues of given matrix, and dimension of $\mathbf{D}$ is $n \times m$)
+\item $\mathbf{V}$ = eigenvectors of $\mathbf{A}^T\mathbf{A}$, (dimension $m\times m$)
+\end{itemize}
+
+\section{Positive Definitie and Semi-definite Matrices}
+\label{term:positive_definite_and_semi-definite}\index{Positive Definite Matrices}\index{Positive Semi-definite Matrices}
+A matrix $\mathbf{A}$ is positive definite if and only if 
+\[ \vec x^T\mathbf{A}\vec x > 0, \forall \vec x \]
+A matrix $\mathbf{A}$ is positive semi-definite if and only if 
+\[ \vec x^T\mathbf{A}\vec x \geq 0, \forall \vec x \]
+If $\mathbf{A}$ is positive definite, then $\mathbf{A}$ is also positive semi-definite.
+
+Here are some properties of such matrices:
+\begin{itemize}
+	\item $\mathbf{A}$ is positive definite $\Leftrightarrow$ $\text{eig}(\mathbf{A}) > 0$
+	\item $\mathbf{A}$ is positive semi-definite $\Leftrightarrow$ $\text{eig}(\mathbf{A}) \geq 0$
+	\item $\mathbf{A}$ is positive definite $\Leftrightarrow$ $\text{tr}(\mathbf{A}) > 0$
+	\item $\mathbf{A}$ is positive semi-definite $\Leftrightarrow$ $\text{tr}(\mathbf{A}) \geq 0$
+	\item If $\mathbf{A}$ is positive definite, then $\mathbf{A}$ is invertible, and $\mathbf{A}^{-1}$ is also positive definite.
+	\item If $\mathbf{A}$ is positive definite, then $\mathbf{A}_{ii} > 0, \forall i$
+	\item The matrix $\mathbf{A}$ is positive semi-definite of rank $r$ $\Leftrightarrow$ there exists a matrix $\mathbf{B}$ of rank $r$ such that $\mathbf{A} = \mathbf{B}\mathbf{B}^T$
+	\item The matrix $\mathbf{A}$ is positive definite $\Leftrightarrow$ there exists an invertible matrix $\mathbf{B}$ such that $\mathbf{A} = \mathbf{B}\mathbf{B}^T$
+	\item If $\mathbf{A}$ is an $n\times n$ positive semi-definite, then there exists an $n\times r$ matrix $\mathbf{B}$ of rank $r$ such that $\mathbf{B}^T\mathbf{AB} = \mathbf{I}$.
+	\item If $\mathbf{A}$ is positive semi-definite, then $\mathbf{X}^T\mathbf{AX} = 0 \Rightarrow \mathbf{AX} = 0 $
+	\item If $\mathbf{A}$ is positive definite, then $\text{rank}(\mathbf{BA}\mathbf{B}^T) = \text{rank}(\mathbf{B})$
+	\item If $\mathbf{A}$ is positive definite, and $\mathbf{B}$ is $r\times n$ of rank $r$, then $\mathbf{BA}\mathbf{B}^T$ is positive definite.
+	\item If $\mathbf{X}$ is $n \times r$, where $n\leq r$ and $\text{rank}(\mathbf{X})=n$, then $\mathbf{X}\mathbf{X}^T$ is positive definite.
+\end{itemize}
+
+\section{Lagrange Multipliers}
+\label{term:lagrange_multipliers}\index{Lagrange Multipliers}
+Consider the following optimization problem:
+\begin{eqnarray}
+\nonumber \text{minimize}\quad f(\vec x)\\
+\nonumber \text{subject to}\quad h_1(\vec x) &=& 0\\
+\nonumber h_2(\vec x) &=& 0\\
+\nonumber \vdots\\
+\nonumber h_m(\vec x) &=& 0
+\end{eqnarray}
+where $\vec x \subset \mathbb{R}^n$, and the functions $f, h_1, \cdots, h_m$ are continuous, and differentiable.
+
+When $f$ and $h_i$'s are linear, it becomes a linear programming problem and can be solved using the simplex algorithm. However, the following formulation is more relaxed, hence any/all of the functions can be non-linear.
+
+\section{Karush-Kuhn-Tucker (KKT) Conditions}
+\label{term:kkt_conditions}\index{KKT Conditions}\index{Karush-Kuhn-Tucker Conditions}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\bibliographystyle{IEEEtran}

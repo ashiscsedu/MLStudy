@@ -1,8 +1,8 @@
 \begin{theindex}
 
   \item $L_1$-norm, \hyperpage{17}
-  \item $L_{2,1}$ norm, \hyperpage{17}
-  \item \emph{p}-norm, \hyperpage{16}
+  \item $L_{2,1}$ norm, \hyperpage{18}
+  \item \emph{p}-norm, \hyperpage{17}
 
   \indexspace
 
@@ -13,8 +13,9 @@
   \item Derivative, \hyperpage{18}
   \item Determinant, \hyperpage{7}
   \item Diagonal Matrix, \hyperpage{3}
-  \item Directional Derivative, \hyperpage{24}
+  \item Directional Derivative, \hyperpage{25}
   \item Dot product, \hyperpage{12}
+  \item Dyadic product, \hyperpage{13}
 
   \indexspace
 
@@ -29,18 +30,19 @@
   \indexspace
 
   \item Gauss-Jordan Elimination Algorithm, \hyperpage{6}
-  \item Gradient, \hyperpage{29}
+  \item Gradient, \hyperpage{30}
 
   \indexspace
 
-  \item Hadamard Product, \hyperpage{31, 32}
-  \item Hessian, \hyperpage{30}
+  \item Hadamard Product, \hyperpage{31}, \hyperpage{33}
+  \item Hessian, \hyperpage{31}
 
   \indexspace
 
   \item Idempotent Matrix, \hyperpage{3}
   \item Identity Matrix, \hyperpage{3}
   \item Infinity norm, \hyperpage{17}
+  \item Inner Product, \hyperpage{12}
   \item Inverse of Matrix, \hyperpage{10}
 
   \indexspace
@@ -49,24 +51,36 @@
 
   \indexspace
 
-  \item Kronecker Product, \hyperpage{31}
+  \item Karush-Kuhn-Tucker Conditions, \hyperpage{34}
+  \item KKT Conditions, \hyperpage{34}
+  \item Kronecker Product, \hyperpage{32}
 
   \indexspace
 
+  \item Lagrange Multipliers, \hyperpage{34}
   \item Linear Span, \hyperpage{1}
   \item Linearly Independent Vectors, \hyperpage{1}
 
   \indexspace
 
-  \item Manhattan norm, \hyperpage{16}
-  \item Matrix norms, \hyperpage{16}
+  \item Manhattan norm, \hyperpage{17}
+  \item Matrix norms, \hyperpage{17}
   \item Matrix Product, \hyperpage{13}
-  \item Maximum norm, \hyperpage{16}
+  \item Maximum norm, \hyperpage{17}
 
   \indexspace
 
   \item Norm of vectors, \hyperpage{16}
-  \item Norms, \hyperpage{16}
+  \item Norms, \hyperpage{16, 17}
+
+  \indexspace
+
+  \item Outer Product, \hyperpage{13}
+
+  \indexspace
+
+  \item Positive Definite Matrices, \hyperpage{33}
+  \item Positive Semi-definite Matrices, \hyperpage{33}
 
   \indexspace
 
@@ -75,16 +89,19 @@
 
   \indexspace
 
+  \item Scalar Product, \hyperpage{12}
   \item Schur product, \hyperpage{31}
   \item Singular Matrix, \hyperpage{3}
+  \item Singular Value Decomposition, \hyperpage{33}
   \item Solving system of linear equations, \hyperpage{7}, 
 		\hyperpage{11}
+  \item SVD, \hyperpage{33}
   \item System of Linear Equations, \hyperpage{11}
 
   \indexspace
 
-  \item Trace of Matrix, \hyperpage{31}
-  \item Transpose of Matrix, \hyperpage{13}
+  \item Trace of Matrix, \hyperpage{32}
+  \item Transpose of Matrix, \hyperpage{14}
   \item Triangular Matrix, \hyperpage{5}
 
   \indexspace
@@ -93,6 +110,7 @@
 
   \indexspace
 
+  \item Vec operator, \hyperpage{32}
   \item Vector Space, \hyperpage{1}
   \item Vector Subspace, \hyperpage{1}
 
